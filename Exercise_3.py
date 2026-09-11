@@ -2,10 +2,9 @@
 # Alicia Mañas, Lídia Sanchez and Paula Artiz
 
 #!/usr/bin/env python
-#
+
 """ Exercise 3
 Determine all possible hydrogen bonds (Polar atoms at less than 3.5 A).
-
 Parameters: PDB file name. Optional: cut-off distance (defaults to 3.5)
 
 Usage (from terminal):
@@ -19,7 +18,7 @@ import os
 from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.NeighborSearch import NeighborSearch
 
-POLAR_ELEMENTS = ('O', 'N', 'S')
+polar_elem = ('O', 'N', 'S')
 
 
 def residue_id(res):
@@ -32,7 +31,7 @@ def residue_id(res):
 def main():
     parser = argparse.ArgumentParser(
         prog='Exercise_3',
-        description='List possible hydrogen bonds between polar atoms (O, N, S) closer than a cut-off distance'
+        description='List possible hydrogen bonds between polar atoms'
     )
 
     parser.add_argument(
@@ -40,12 +39,12 @@ def main():
         dest='cutoff',
         type=float,
         default=3.5,
-        help='Distance cut-off in Angstroms for a possible hydrogen bond (default: 3.5)'
+        help='Distance criterium (dist < 3.5 Å)'
     )
 
     parser.add_argument(
         'pdb_file',
-        help='Input PDB file'
+        help='PDB file' # 1UBQ.pdb or 4HHB.pdb
     )
 
     args = parser.parse_args()
@@ -56,7 +55,7 @@ def main():
     st = pdb_parser.get_structure(pdb_id, args.pdb_file)
 
     # Select only polar atoms (O, N, S)
-    polar_atoms = [at for at in st.get_atoms() if at.element in POLAR_ELEMENTS]
+    polar_atoms = [at for at in st.get_atoms() if at.element in polar_elem]
 
     nbsearch = NeighborSearch(polar_atoms)
 
