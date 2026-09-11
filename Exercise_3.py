@@ -1,106 +1,85 @@
-# Exercise 3
+# Practical 1 - PDB
+# Alicia Mañas, Lídia Sanchez and Paula Artiz
 
 #!/usr/bin/env python
+#
+""" Exercise 3
+Determine all possible hydrogen bonds (Polar atoms at less than 3.5 A).
+
+Parameters: PDB file name. Optional: cut-off distance (defaults to 3.5)
+
+Usage (from terminal):
+    python Exercise_3.py structure.pdb
+    python Exercise_3.py structure.pdb --cutoff 3.2
+"""
 
 import argparse
-from Bio.PDB.NeighborSearch import NeighborSearch
+import os
+
 from Bio.PDB.PDBParser import PDBParser
+from Bio.PDB.NeighborSearch import NeighborSearch
+
+POLAR_ELEMENTS = ('O', 'N', 'S')
+
+
+def residue_id(res):
+    chain_id = res.get_parent().id
+    resnum = res.id[1]
+    icode = res.id[2].strip()
+    return f"{res.get_resname()} {chain_id}{resnum}{icode}"
 
 
 def main():
-
-    # Configuración de los argumentos
     parser = argparse.ArgumentParser(
-        prog='ProgName',
-        description='Search for possible hydrogen bonds between polar atoms'
+        prog='Exercise_3',
+        description='List possible hydrogen bonds between polar atoms (O, N, S) closer than a cut-off distance'
     )
 
     parser.add_argument(
-        '--PDB',
-        dest='pdb_file',
-        help='PDB file to analyze',
-        required=True
-    )
-
-    parser.add_argument(
-        '--distance',
-        dest='distance',
+        '--cutoff',
+        dest='cutoff',
         type=float,
         default=3.5,
-        help='Maximum distance for a possible hydrogen bond (default: 3.5 Å)'
+        help='Distance cut-off in Angstroms for a possible hydrogen bond (default: 3.5)'
+    )
+
+    parser.add_argument(
+        'pdb_file',
+        help='Input PDB file'
     )
 
     args = parser.parse_args()
 
-    # Crear el parser de PDB
-    parser_pdb = PDBParser(PERMISSIVE=1)
+    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
 
-    # Cargar la estructura
-    st = parser_pdb.get_structure('structure', args.pdb_file)
+    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
+    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
 
-    selected = []
+    # Select only polar atoms (O, N, S)
+    polar_atoms = [at for at in st.get_atoms() if at.element in POLAR_ELEMENTS]
 
-    # Seleccionar átomos polares: O, N y S
-    polar_atoms = ['O', 'N', 'S']
+    nbsearch = NeighborSearch(polar_atoms)
 
-    print("Polar atoms selected:")
+    hbonds = []
+    for at1, at2 in nbsearch.search_all(args.cutoff):
+        res1 = at1.get_parent()
+        res2 = at2.get_parent()
+        # Hydrogen bonds only make sense between atoms of different residues
+        if res1 is res2:
+            continue
+        dist = at1 - at2
+        hbonds.append((res1, at1, res2, at2, dist))
 
-    for atom in st.get_atoms():
+    # Sort by residue number / chain of the first atom involved
+    hbonds.sort(key=lambda h: (h[0].get_parent().id, h[0].id[1], h[2].get_parent().id, h[2].id[1]))
 
-        # Obtener el nombre del átomo
-        atom_name = atom.get_name().strip()
+    print(f"Possible hydrogen bonds (polar atom-atom distance < {args.cutoff} A)")
+    print("-" * 70)
+    for res1, at1, res2, at2, dist in hbonds:
+        print(f"{residue_id(res1):>12}.{at1.get_name():<4} -- "
+              f"{residue_id(res2):<12}.{at2.get_name():<4}  {dist:6.2f} A")
 
-        if atom_name.startswith(tuple(polar_atoms)):
-            selected.append(atom)
-
-            residue = atom.get_parent()
-
-            print(
-                f"ATOM: {residue.get_resname()}, "
-                f"Residue: {residue.id[1]}, "
-                f"Atom: {atom_name}"
-            )
-
-    # Preparar la búsqueda de vecinos
-    nbsearch = NeighborSearch(selected)
-
-    print("\nPossible Hydrogen Bonds:")
-    print(f"Distance criterion: < {args.distance} Å\n")
-
-    ncontact = 1
-
-    # Buscar pares de átomos próximos
-    for atom1, atom2 in nbsearch.search_all(args.distance):
-
-        # Calcular la distancia entre los dos átomos
-        distance = atom1 - atom2
-
-        # Obtener información de los residuos
-        residue1 = atom1.get_parent()
-        residue2 = atom2.get_parent()
-
-        print(f"Contact: {ncontact}")
-
-        print(
-            f"Atom 1: {atom1.get_name()}, "
-            f"Residue: {residue1.get_resname()} "
-            f"{residue1.id[1]}, "
-            f"Chain: {residue1.get_parent().id}"
-        )
-
-        print(
-            f"Atom 2: {atom2.get_name()}, "
-            f"Residue: {residue2.get_resname()} "
-            f"{residue2.id[1]}, "
-            f"Chain: {residue2.get_parent().id}"
-        )
-
-        print(f"Distance: {distance:.2f} Å")
-        print()
-
-        ncontact += 1
-
-    print(f"Total possible hydrogen bonds: {ncontact - 1}")
+    print(f"\nTotal possible hydrogen bonds found: {len(hbonds)}")
 
 
 if __name__ == '__main__':

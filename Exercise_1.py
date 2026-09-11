@@ -1,88 +1,83 @@
 # Practical 1 - PDB
+# Alicia Mañas, Lídia Sanchez and Paula Artiz
 
-# Exercise 1
+""" Exercise 1
+Determine the list of pairs of residues whose CA atoms are closer than a
+given distance.
 
-#!/usr/bin/env python
+Parameters: PDB file name, distance.
+
+Usage (from terminal):
+    python Exercise_1.py structure.pdb 5.0
+    python Exercise_1.py --dist 5.0 structure.pdb
+"""
 
 import argparse
-from Bio.PDB.NeighborSearch import NeighborSearch
+import os
+
 from Bio.PDB.PDBParser import PDBParser
+from Bio.PDB.NeighborSearch import NeighborSearch
+
+
+def residue_id(res):
+    """Return a readable identifier for a residue: RESNAME ChainId ResNum"""
+    chain_id = res.get_parent().id
+    resnum = res.id[1]
+    icode = res.id[2].strip()
+    return f"{res.get_resname()} {chain_id}{resnum}{icode}"
 
 
 def main():
-    # Configuración de los argumentos de línea de comandos
     parser = argparse.ArgumentParser(
-        prog='ProgName',
-        description='Programa para buscar contactos entre átomos CA de una estructura PDB'
+        prog='Exercise_1',
+        description='List pairs of residues whose CA atoms are closer than a given distance'
     )
 
     parser.add_argument(
-        '--PDB',
-        dest='pdb_file',
-        help='Archivo PDB que se quiere analizar',
-        required=True
-    )
-
-    parser.add_argument(
-        '--distance',
-        dest='distance',
+        '--dist',
+        dest='dist',
         type=float,
-        default=20.0,
-        help='Distancia máxima para considerar un contacto (por defecto: 20 Å)'
+        default=5.0,
+        help='Distance threshold in Angstroms (default: 5.0)'
+    )
+
+    parser.add_argument(
+        'pdb_file',
+        help='Input PDB file'
     )
 
     args = parser.parse_args()
 
-    # Crear el parser de PDB
-    parser_pdb = PDBParser(PERMISSIVE=1)
+    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
 
-    # Cargar la estructura desde el archivo PDB
-    st = parser_pdb.get_structure('structure', args.pdb_file)
+    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
+    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
 
-    select = []
+    # Select only CA atoms
+    ca_atoms = [at for at in st.get_atoms() if at.id == 'CA']
 
-    # Seleccionar únicamente los átomos CA
-    print("Átomos CA seleccionados:")
+    nbsearch = NeighborSearch(ca_atoms)
 
-    for at in st.get_atoms():
-        if at.id == 'CA':
-            select.append(at)
+    pairs = []
+    for at1, at2 in nbsearch.search_all(args.dist):
+        res1 = at1.get_parent()
+        res2 = at2.get_parent()
+        # Skip pairs that are the same residue (should not happen for CA-CA
+        # but kept as a safety check) and avoid trivial neighbor pairs
+        if res1 is res2:
+            continue
+        dist = at1 - at2
+        pairs.append((res1, res2, dist))
 
-            print(
-                f"ATOM: {at.get_parent().get_resname()}, "
-                f"{at.get_parent().id[1]}, "
-                f"{at.id}"
-            )
+    # Sort by residue number of the first residue, then the second
+    pairs.sort(key=lambda p: (p[0].get_parent().id, p[0].id[1], p[1].get_parent().id, p[1].id[1]))
 
-    # Preparar la búsqueda de vecinos
-    nbsearch = NeighborSearch(select)
+    print(f"Pairs of residues with CA-CA distance < {args.dist} A")
+    print("-" * 60)
+    for res1, res2, dist in pairs:
+        print(f"{residue_id(res1):>12} -- {residue_id(res2):<12}  {dist:6.2f} A")
 
-    print("\nNBSEARCH:")
-    print(f"Distancia máxima: {args.distance} Å\n")
-
-    # Buscar contactos
-    ncontact = 1
-
-    for at1, at2 in nbsearch.search_all(args.distance):
-        print(f"Contact: {ncontact}")
-
-        print(
-            f"at1: {at1}, "
-            f"{at1.get_serial_number()}, "
-            f"{at1.get_parent().get_resname()}"
-        )
-
-        print(
-            f"at2: {at2}, "
-            f"{at2.get_serial_number()}, "
-            f"{at2.get_parent().get_resname()}"
-        )
-
-        print()
-
-        ncontact += 1
-
-    print(f"Total de contactos encontrados: {ncontact - 1}")
+    print(f"\nTotal pairs found: {len(pairs)}")
 
 
 if __name__ == '__main__':

@@ -1,49 +1,81 @@
-# Exercise 2
+# Practical 1 - PDB
+# Alicia Mañas, Lídia Sanchez and Paula Artiz
 
-""" Simple program to print ARG residues iteration over atoms """
+#!/usr/bin/env python
+#
+""" Exercise 2
+Generate a list of all atoms for a given residue number.
+
+Parameters: PDB file name, Residue number (Including Chain if applicable)
+
+Usage (from terminal):
+    python Exercise_2.py structure.pdb 35
+    python Exercise_2.py --chain A structure.pdb 35
+"""
 
 import argparse
-from Bio.PDB.NeighborSearch import NeighborSearch
+import os
+import sys
+
 from Bio.PDB.PDBParser import PDBParser
 
+
 def main():
-    # Configuración de los argumentos de línea de comandos
     parser = argparse.ArgumentParser(
-        prog='ProgName',
-        description='Programa para buscar contactos entre átomos CA de una estructura PDB'
+        prog='Exercise_2',
+        description='List all atoms (name and coordinates) for a given residue number'
     )
 
     parser.add_argument(
-        '--PDB',
-        dest='pdb_file',
-        help='Archivo PDB que se quiere analizar',
-        required=True
+        '--chain',
+        dest='chain',
+        default=None,
+        help='Chain id (optional). If not given, all chains are searched'
     )
 
     parser.add_argument(
-        '--distance',
-        dest='distance',
-        type=float,
-        default=20.0,
-        help='Distancia máxima para considerar un contacto (por defecto: 20 Å)'
+        'pdb_file',
+        help='Input PDB file'
+    )
+
+    parser.add_argument(
+        'resnum',
+        type=int,
+        help='Residue number'
     )
 
     args = parser.parse_args()
 
-parser = PDBParser()
+    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
 
-st = parser.get_structure('1UBQ', '1ubq.pdb')
+    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
+    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
 
-selected = []
-aa = ["ARG"]
+    model = st[0]
 
-for at in st.get_atoms():
-    if at.get_parent().get_resname() in aa:
-        selected.append(at)
+    matched_residues = []
+    for chain in model:
+        if args.chain is not None and chain.id != args.chain:
+            continue
+        for res in chain:
+            if res.id[1] == args.resnum:
+                matched_residues.append(res)
 
-print("Coordinates:")
-for atom in selected:
-    print(f"{atom.get_parent().get_resname()}, {atom.get_parent().id}, {atom.get_name()}, {atom.get_coord()}")
+    if not matched_residues:
+        sys.exit(f"No residue with number {args.resnum} found"
+                  f"{' in chain ' + args.chain if args.chain else ''}.")
+
+    for res in matched_residues:
+        chain_id = res.get_parent().id
+        print(f"\nResidue: {res.get_resname()} {chain_id}{res.id[1]}")
+        print("-" * 50)
+        print(f"{'Atom':<6}{'X':>10}{'Y':>10}{'Z':>10}")
+        # Sort atoms by serial number for a consistent, easy-to-read order
+        atoms = sorted(res.get_atoms(), key=lambda at: at.get_serial_number())
+        for at in atoms:
+            x, y, z = at.get_coord()
+            print(f"{at.get_name():<6}{x:>10.3f}{y:>10.3f}{z:>10.3f}")
+
 
 if __name__ == '__main__':
     main()
