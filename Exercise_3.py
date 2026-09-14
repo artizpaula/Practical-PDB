@@ -11,69 +11,59 @@ Usage (from terminal):
 """
 
 import argparse
-import os
 
-from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.NeighborSearch import NeighborSearch
+from Bio.PDB.PDBParser import PDBParser
 
 polar_atoms = ('O', 'N', 'S')
 
-def get_label(residue):
-    seg = residue.get_parent().id
-    num = residue.id[1]
-    ins = residue.id[2].strip()
-    return f"{residue.get_resname()} {seg}{num}{ins}"
+# argparse, following ex_cmd_line.py
+parser = argparse.ArgumentParser(
+    prog='Exercise_3',
+    description='List possible hydrogen bonds between polar atoms')
 
+parser.add_argument(
+    '--cutoff',
+    dest='cutoff',
+    type=float,
+    default=3.5,
+    help='Distance criterium in Angstrom (default: 3.5)')
 
-def main():
-    argp = argparse.ArgumentParser(
-        prog='Exercise_3',
-        description='List possible hydrogen bonds between polar atoms'
-    )
+parser.add_argument(
+    'input_pdb',
+    help='Input PDB file')
 
-    argp.add_argument(
-        '--cutoff',
-        dest='cutoff',
-        type=float,
-        default=3.5,
-        help='Distance criterium (dist < 3.5 Å)'
-    )
+args = parser.parse_args()
 
-    argp.add_argument(
-        'input_pdb',
-        help='PDB file'
-    )
+pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
 
-    opts = argp.parse_args()
+# load structure from PDB file
+st = pdb_parser.get_structure('structure', args.input_pdb)
 
-    struct_name = os.path.splitext(os.path.basename(opts.input_pdb))[0]
+select = []
 
-    reader = PDBParser(PERMISSIVE=1, QUIET=True)
-    structure = reader.get_structure(struct_name, opts.input_pdb)
+# only polar atoms (O, N, S)
+for at in st.get_atoms():
+    if at.element in polar_atoms:
+        select.append(at)
 
-    polar_list = [a for a in structure.get_atoms() if a.element in polar_atoms]
+nbsearch = NeighborSearch(select)
 
-    searcher = NeighborSearch(polar_list)
+print(f"Possible hydrogen bonds (polar atom-atom distance < {args.cutoff} A)")
+print("-" * 70)
 
-    bonds = []
-    for a1, a2 in searcher.search_all(opts.cutoff):
-        r1 = a1.get_parent()
-        r2 = a2.get_parent()
-        if r1 is r2:
-            continue
-        d = a1 - a2
-        bonds.append((r1, a1, r2, a2, d))
+ncontact = 1
 
-    bonds.sort(key=lambda h: (h[0].get_parent().id, h[0].id[1], h[2].get_parent().id, h[2].id[1]))
+for at1, at2 in nbsearch.search_all(args.cutoff):
+    res1 = at1.get_parent()
+    res2 = at2.get_parent()
+    if res1 == res2:
+        continue
 
-    print(f"Possible hydrogen bonds (polar atom-atom distance < {opts.cutoff} A)")
-    print("-" * 70)
-    for r1, a1, r2, a2, d in bonds:
-        print(f"{get_label(r1):>12}.{a1.get_name():<4} -- "
-              f"{get_label(r2):<12}.{a2.get_name():<4}  {d:6.2f} A")
-
-    print(f"\nTotal possible hydrogen bonds found: {len(bonds)}")
-
-
-if __name__ == '__main__':
-    main()
+    print(f"Contact {ncontact}:")
+    print(f"  {res1.get_resname()} {res1.get_parent().id}{res1.id[1]}.{at1.get_name()}"
+          f" -- {res2.get_resname()} {res2.get_parent().id}{res2.id[1]}.{at2.get_name()}")
+    print(f"  Distance: {at1 - at2:.2f} A")
+    print()
+    ncontact += 1
+print(f"Total possible hydrogen bonds found: {ncontact - 1}")
