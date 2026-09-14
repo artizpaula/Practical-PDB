@@ -20,7 +20,7 @@ def ex_8(id):
         file_format="pdb"
     )
 
-    old_filename = f"./pdb{pdb_id}.ent"
+    old_filename = f"./pdb{pdb_id}.ent" #retrieve_pdb_file always save the pdb file with the .ent extension
 
     os.rename(old_filename, new_filename)
 
