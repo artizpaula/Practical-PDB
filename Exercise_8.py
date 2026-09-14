@@ -8,7 +8,7 @@ from Bio.PDB import PDBList
 import os
 
 def ex_8(id):
-    # Strip any extension that maybe has been included
+    # Strip any extension that maybe has been included that affects to find the id
     pdb_id = os.path.splitext(id)[0].lower()
 
     new_filename = f"{pdb_id}.pdb"
