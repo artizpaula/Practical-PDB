@@ -4,3 +4,25 @@
 #!/usr/bin/env python
 
 # Exercise 8
+from Bio.PDB import PDBList
+import os
+
+def ex_8(id):
+    # Strip any extension that maybe has been included
+    pdb_id = os.path.splitext(id)[0].lower()
+
+    new_filename = f"{pdb_id}.pdb"
+
+    pdb_list = PDBList()
+    pdb_list.retrieve_pdb_file(
+        pdb_id,
+        pdir=".",
+        file_format="pdb"
+    )
+
+    old_filename = f"./pdb{pdb_id}.ent"
+
+    os.rename(old_filename, new_filename)
+
+    return new_filename
+    
