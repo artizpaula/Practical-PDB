@@ -46,14 +46,13 @@ for chain in model0:
             hits.append(res)
 
 if not hits:
-    print(f"No residue with number {args.res_num} found"
-          f"{' in chain ' + args.chain if args.chain else ''}.")
+    print("No residue with number", args.res_num, "found.")
 
 for res in hits:
     chain_id = res.get_parent().id
-    print(f"\nResidue: {res.get_resname()} {chain_id}{res.id[1]}")
-    print(f"{'Atom':<6}{'X':>10}{'Y':>10}{'Z':>10}")
+    print()
+    print("Residue:", res.get_resname(), chain_id + str(res.id[1]))
     atom_list = sorted(res.get_atoms(), key=lambda a: a.get_serial_number())
     for atom in atom_list:
         x, y, z = atom.get_coord()
-        print(f"{atom.get_name():<6}{x:>10.3f}{y:>10.3f}{z:>10.3f}")
+        print("Atom:", atom.get_name(), " X:", "%.3f" % x, " Y:", "%.3f" % y, " Z:", "%.3f" % z)

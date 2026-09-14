@@ -43,20 +43,24 @@ for at in st.get_atoms():
 
 nbsearch = NeighborSearch(select)
 
-print(f"Possible hydrogen bonds (polar atom-atom distance < {args.cutoff} A)")
+print("Possible hydrogen bonds (polar atom-atom distance <", args.cutoff, "A)")
+print()
 
-ncontact = 1
+ncontact = 0
 
 for at1, at2 in nbsearch.search_all(args.cutoff):
     res1 = at1.get_parent()
     res2 = at2.get_parent()
     if res1 == res2:
         continue
-
-    print(f"Contact {ncontact}:")
-    print(f"  {res1.get_resname()} {res1.get_parent().id}{res1.id[1]}.{at1.get_name()}"
-          f" -- {res2.get_resname()} {res2.get_parent().id}{res2.id[1]}.{at2.get_name()}")
-    print(f"  Distance: {at1 - at2:.2f} A")
-    print()
     ncontact += 1
-print(f"Total possible hydrogen bonds found: {ncontact - 1}")
+    chain1 = res1.get_parent().id
+    chain2 = res2.get_parent().id
+    dist = at1 - at2
+
+    print(ncontact, res1.get_resname(), chain1 + str(res1.id[1]) + "." + at1.get_name(),
+          "-", res2.get_resname(), chain2 + str(res2.id[1]) + "." + at2.get_name(),
+          ": %.2f A" % dist)
+
+print()
+print("Total possible hydrogen bonds found:", ncontact)

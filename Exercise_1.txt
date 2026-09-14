@@ -8,385 +8,83 @@ Input: python Exercise_1.py 1UBQ.pdb 4.0 (4.0 selected as an example distance)
 Output:
 
 Pairs of residues with CA atoms closer than 4.0 A
-Contact 1:
-  Residue 1: MET A1  (CA serial 2)
-  Residue 2: GLN A2  (CA serial 10)
-  Distance: 3.80 A
 
-Contact 2:
-  Residue 1: GLN A62  (CA serial 484)
-  Residue 2: LYS A63  (CA serial 493)
-  Distance: 3.82 A
-
-Contact 3:
-  Residue 1: GLU A18  (CA serial 135)
-  Residue 2: PRO A19  (CA serial 144)
-  Distance: 3.81 A
-
-Contact 4:
-  Residue 1: ILE A61  (CA serial 476)
-  Residue 2: GLN A62  (CA serial 484)
-  Distance: 3.85 A
-
-Contact 5:
-  Residue 1: PRO A19  (CA serial 144)
-  Residue 2: SER A20  (CA serial 151)
-  Distance: 3.80 A
-
-Contact 6:
-  Residue 1: ASN A60  (CA serial 468)
-  Residue 2: ILE A61  (CA serial 476)
-  Distance: 3.83 A
-
-Contact 7:
-  Residue 1: THR A55  (CA serial 427)
-  Residue 2: LEU A56  (CA serial 434)
-  Distance: 3.83 A
-
-Contact 8:
-  Residue 1: ARG A54  (CA serial 416)
-  Residue 2: THR A55  (CA serial 427)
-  Distance: 3.83 A
-
-Contact 9:
-  Residue 1: ASP A58  (CA serial 448)
-  Residue 2: TYR A59  (CA serial 456)
-  Distance: 3.80 A
-
-Contact 10:
-  Residue 1: LEU A50  (CA serial 387)
-  Residue 2: GLU A51  (CA serial 395)
-  Distance: 3.82 A
-
-Contact 11:
-  Residue 1: GLN A49  (CA serial 378)
-  Residue 2: LEU A50  (CA serial 387)
-  Distance: 3.83 A
-
-Contact 12:
-  Residue 1: LYS A48  (CA serial 369)
-  Residue 2: GLN A49  (CA serial 378)
-  Distance: 3.83 A
-
-Contact 13:
-  Residue 1: LEU A56  (CA serial 434)
-  Residue 2: SER A57  (CA serial 442)
-  Distance: 3.82 A
-
-Contact 14:
-  Residue 1: SER A57  (CA serial 442)
-  Residue 2: ASP A58  (CA serial 448)
-  Distance: 3.82 A
-
-Contact 15:
-  Residue 1: TYR A59  (CA serial 456)
-  Residue 2: ASN A60  (CA serial 468)
-  Distance: 3.83 A
-
-Contact 16:
-  Residue 1: GLU A64  (CA serial 502)
-  Residue 2: SER A65  (CA serial 511)
-  Distance: 3.78 A
-
-Contact 17:
-  Residue 1: ILE A3  (CA serial 19)
-  Residue 2: PHE A4  (CA serial 27)
-  Distance: 3.82 A
-
-Contact 18:
-  Residue 1: PHE A4  (CA serial 27)
-  Residue 2: VAL A5  (CA serial 38)
-  Distance: 3.82 A
-
-Contact 19:
-  Residue 1: SER A65  (CA serial 511)
-  Residue 2: THR A66  (CA serial 517)
-  Distance: 3.83 A
-
-Contact 20:
-  Residue 1: THR A66  (CA serial 517)
-  Residue 2: LEU A67  (CA serial 524)
-  Distance: 3.82 A
-
-Contact 21:
-  Residue 1: VAL A5  (CA serial 38)
-  Residue 2: LYS A6  (CA serial 45)
-  Distance: 3.84 A
-
-Contact 22:
-  Residue 1: THR A7  (CA serial 54)
-  Residue 2: LEU A8  (CA serial 61)
-  Distance: 3.83 A
-
-Contact 23:
-  Residue 1: HIS A68  (CA serial 532)
-  Residue 2: LEU A69  (CA serial 542)
-  Distance: 3.81 A
-
-Contact 24:
-  Residue 1: PHE A45  (CA serial 349)
-  Residue 2: ALA A46  (CA serial 360)
-  Distance: 3.79 A
-
-Contact 25:
-  Residue 1: ILE A44  (CA serial 341)
-  Residue 2: PHE A45  (CA serial 349)
-  Distance: 3.82 A
-
-Contact 26:
-  Residue 1: ALA A46  (CA serial 360)
-  Residue 2: GLY A47  (CA serial 365)
-  Distance: 3.77 A
-
-Contact 27:
-  Residue 1: LEU A43  (CA serial 333)
-  Residue 2: ILE A44  (CA serial 341)
-  Distance: 3.81 A
-
-Contact 28:
-  Residue 1: LYS A6  (CA serial 45)
-  Residue 2: THR A7  (CA serial 54)
-  Distance: 3.81 A
-
-Contact 29:
-  Residue 1: LEU A67  (CA serial 524)
-  Residue 2: HIS A68  (CA serial 532)
-  Distance: 3.81 A
-
-Contact 30:
-  Residue 1: LYS A63  (CA serial 493)
-  Residue 2: GLU A64  (CA serial 502)
-  Distance: 3.78 A
-
-Contact 31:
-  Residue 1: GLN A2  (CA serial 10)
-  Residue 2: ILE A3  (CA serial 19)
-  Distance: 3.80 A
-
-Contact 32:
-  Residue 1: GLY A47  (CA serial 365)
-  Residue 2: LYS A48  (CA serial 369)
-  Distance: 3.80 A
-
-Contact 33:
-  Residue 1: GLU A16  (CA serial 119)
-  Residue 2: VAL A17  (CA serial 128)
-  Distance: 3.76 A
-
-Contact 34:
-  Residue 1: LEU A15  (CA serial 111)
-  Residue 2: GLU A16  (CA serial 119)
-  Distance: 3.80 A
-
-Contact 35:
-  Residue 1: GLN A31  (CA serial 235)
-  Residue 2: ASP A32  (CA serial 244)
-  Distance: 3.79 A
-
-Contact 36:
-  Residue 1: ALA A28  (CA serial 213)
-  Residue 2: LYS A29  (CA serial 218)
-  Distance: 3.84 A
-
-Contact 37:
-  Residue 1: ASN A25  (CA serial 189)
-  Residue 2: VAL A26  (CA serial 197)
-  Distance: 3.78 A
-
-Contact 38:
-  Residue 1: THR A22  (CA serial 165)
-  Residue 2: ILE A23  (CA serial 172)
-  Distance: 3.79 A
-
-Contact 39:
-  Residue 1: ILE A23  (CA serial 172)
-  Residue 2: GLU A24  (CA serial 180)
-  Distance: 3.83 A
-
-Contact 40:
-  Residue 1: ASP A52  (CA serial 404)
-  Residue 2: GLY A53  (CA serial 412)
-  Distance: 3.83 A
-
-Contact 41:
-  Residue 1: PRO A38  (CA serial 289)
-  Residue 2: ASP A39  (CA serial 296)
-  Distance: 3.81 A
-
-Contact 42:
-  Residue 1: ASP A21  (CA serial 157)
-  Residue 2: THR A22  (CA serial 165)
-  Distance: 3.77 A
-
-Contact 43:
-  Residue 1: VAL A26  (CA serial 197)
-  Residue 2: LYS A27  (CA serial 204)
-  Distance: 3.81 A
-
-Contact 44:
-  Residue 1: GLU A24  (CA serial 180)
-  Residue 2: ASN A25  (CA serial 189)
-  Distance: 3.81 A
-
-Contact 45:
-  Residue 1: LYS A27  (CA serial 204)
-  Residue 2: ALA A28  (CA serial 213)
-  Distance: 3.82 A
-
-Contact 46:
-  Residue 1: ILE A13  (CA serial 96)
-  Residue 2: THR A14  (CA serial 104)
-  Distance: 3.79 A
-
-Contact 47:
-  Residue 1: LYS A33  (CA serial 252)
-  Residue 2: GLU A34  (CA serial 261)
-  Distance: 3.82 A
-
-Contact 48:
-  Residue 1: GLU A34  (CA serial 261)
-  Residue 2: GLY A35  (CA serial 270)
-  Distance: 3.78 A
-
-Contact 49:
-  Residue 1: GLY A35  (CA serial 270)
-  Residue 2: ILE A36  (CA serial 274)
-  Distance: 3.78 A
-
-Contact 50:
-  Residue 1: ILE A36  (CA serial 274)
-  Residue 2: PRO A37  (CA serial 282)
-  Distance: 3.83 A
-
-Contact 51:
-  Residue 1: GLN A40  (CA serial 304)
-  Residue 2: GLN A41  (CA serial 313)
-  Distance: 3.82 A
-
-Contact 52:
-  Residue 1: VAL A70  (CA serial 550)
-  Residue 2: LEU A71  (CA serial 557)
-  Distance: 3.83 A
-
-Contact 53:
-  Residue 1: LEU A71  (CA serial 557)
-  Residue 2: ARG A72  (CA serial 565)
-  Distance: 3.79 A
-
-Contact 54:
-  Residue 1: ARG A72  (CA serial 565)
-  Residue 2: LEU A73  (CA serial 576)
-  Distance: 3.83 A
-
-Contact 55:
-  Residue 1: LEU A73  (CA serial 576)
-  Residue 2: ARG A74  (CA serial 584)
-  Distance: 3.79 A
-
-Contact 56:
-  Residue 1: ARG A74  (CA serial 584)
-  Residue 2: GLY A75  (CA serial 595)
-  Distance: 3.80 A
-
-Contact 57:
-  Residue 1: GLY A75  (CA serial 595)
-  Residue 2: GLY A76  (CA serial 599)
-  Distance: 3.79 A
-
-Contact 58:
-  Residue 1: THR A14  (CA serial 104)
-  Residue 2: LEU A15  (CA serial 111)
-  Distance: 3.80 A
-
-Contact 59:
-  Residue 1: ASP A32  (CA serial 244)
-  Residue 2: LYS A33  (CA serial 252)
-  Distance: 3.80 A
-
-Contact 60:
-  Residue 1: LYS A29  (CA serial 218)
-  Residue 2: ILE A30  (CA serial 227)
-  Distance: 3.82 A
-
-Contact 61:
-  Residue 1: ILE A30  (CA serial 227)
-  Residue 2: GLN A31  (CA serial 235)
-  Distance: 3.83 A
-
-Contact 62:
-  Residue 1: PRO A37  (CA serial 282)
-  Residue 2: PRO A38  (CA serial 289)
-  Distance: 3.81 A
-
-Contact 63:
-  Residue 1: GLN A41  (CA serial 313)
-  Residue 2: ARG A42  (CA serial 322)
-  Distance: 3.81 A
-
-Contact 64:
-  Residue 1: ASP A39  (CA serial 296)
-  Residue 2: GLN A40  (CA serial 304)
-  Distance: 3.81 A
-
-Contact 65:
-  Residue 1: VAL A17  (CA serial 128)
-  Residue 2: GLU A18  (CA serial 135)
-  Distance: 3.78 A
-
-Contact 66:
-  Residue 1: SER A20  (CA serial 151)
-  Residue 2: ASP A21  (CA serial 157)
-  Distance: 3.80 A
-
-Contact 67:
-  Residue 1: THR A22  (CA serial 165)
-  Residue 2: THR A55  (CA serial 427)
-  Distance: 3.93 A
-
-Contact 68:
-  Residue 1: GLY A53  (CA serial 412)
-  Residue 2: ARG A54  (CA serial 416)
-  Distance: 3.82 A
-
-Contact 69:
-  Residue 1: GLU A51  (CA serial 395)
-  Residue 2: ASP A52  (CA serial 404)
-  Distance: 3.83 A
-
-Contact 70:
-  Residue 1: ARG A42  (CA serial 322)
-  Residue 2: LEU A43  (CA serial 333)
-  Distance: 3.84 A
-
-Contact 71:
-  Residue 1: THR A12  (CA serial 89)
-  Residue 2: ILE A13  (CA serial 96)
-  Distance: 3.79 A
-
-Contact 72:
-  Residue 1: LYS A11  (CA serial 80)
-  Residue 2: THR A12  (CA serial 89)
-  Distance: 3.81 A
-
-Contact 73:
-  Residue 1: GLY A10  (CA serial 76)
-  Residue 2: LYS A11  (CA serial 80)
-  Distance: 3.77 A
-
-Contact 74:
-  Residue 1: THR A9  (CA serial 69)
-  Residue 2: GLY A10  (CA serial 76)
-  Distance: 3.77 A
-
-Contact 75:
-  Residue 1: LEU A8  (CA serial 61)
-  Residue 2: THR A9  (CA serial 69)
-  Distance: 3.82 A
-
-Contact 76:
-  Residue 1: LEU A69  (CA serial 542)
-  Residue 2: VAL A70  (CA serial 550)
-  Distance: 3.81 A
+1 MET A1 - GLN A2 : 3.80 A
+2 GLN A62 - LYS A63 : 3.82 A
+3 GLU A18 - PRO A19 : 3.81 A
+4 ILE A61 - GLN A62 : 3.85 A
+5 PRO A19 - SER A20 : 3.80 A
+6 ASN A60 - ILE A61 : 3.83 A
+7 THR A55 - LEU A56 : 3.83 A
+8 ARG A54 - THR A55 : 3.83 A
+9 ASP A58 - TYR A59 : 3.80 A
+10 LEU A50 - GLU A51 : 3.82 A
+11 GLN A49 - LEU A50 : 3.83 A
+12 LYS A48 - GLN A49 : 3.83 A
+13 LEU A56 - SER A57 : 3.82 A
+14 SER A57 - ASP A58 : 3.82 A
+15 TYR A59 - ASN A60 : 3.83 A
+16 GLU A64 - SER A65 : 3.78 A
+17 ILE A3 - PHE A4 : 3.82 A
+18 PHE A4 - VAL A5 : 3.82 A
+19 SER A65 - THR A66 : 3.83 A
+20 THR A66 - LEU A67 : 3.82 A
+21 VAL A5 - LYS A6 : 3.84 A
+22 THR A7 - LEU A8 : 3.83 A
+23 HIS A68 - LEU A69 : 3.81 A
+24 PHE A45 - ALA A46 : 3.79 A
+25 ILE A44 - PHE A45 : 3.82 A
+26 ALA A46 - GLY A47 : 3.77 A
+27 LEU A43 - ILE A44 : 3.81 A
+28 LYS A6 - THR A7 : 3.81 A
+29 LEU A67 - HIS A68 : 3.81 A
+30 LYS A63 - GLU A64 : 3.78 A
+31 GLN A2 - ILE A3 : 3.80 A
+32 GLY A47 - LYS A48 : 3.80 A
+33 GLU A16 - VAL A17 : 3.76 A
+34 LEU A15 - GLU A16 : 3.80 A
+35 GLN A31 - ASP A32 : 3.79 A
+36 ALA A28 - LYS A29 : 3.84 A
+37 ASN A25 - VAL A26 : 3.78 A
+38 THR A22 - ILE A23 : 3.79 A
+39 ILE A23 - GLU A24 : 3.83 A
+40 ASP A52 - GLY A53 : 3.83 A
+41 PRO A38 - ASP A39 : 3.81 A
+42 ASP A21 - THR A22 : 3.77 A
+43 VAL A26 - LYS A27 : 3.81 A
+44 GLU A24 - ASN A25 : 3.81 A
+45 LYS A27 - ALA A28 : 3.82 A
+46 ILE A13 - THR A14 : 3.79 A
+47 LYS A33 - GLU A34 : 3.82 A
+48 GLU A34 - GLY A35 : 3.78 A
+49 GLY A35 - ILE A36 : 3.78 A
+50 ILE A36 - PRO A37 : 3.83 A
+51 GLN A40 - GLN A41 : 3.82 A
+52 VAL A70 - LEU A71 : 3.83 A
+53 LEU A71 - ARG A72 : 3.79 A
+54 ARG A72 - LEU A73 : 3.83 A
+55 LEU A73 - ARG A74 : 3.79 A
+56 ARG A74 - GLY A75 : 3.80 A
+57 GLY A75 - GLY A76 : 3.79 A
+58 THR A14 - LEU A15 : 3.80 A
+59 ASP A32 - LYS A33 : 3.80 A
+60 LYS A29 - ILE A30 : 3.82 A
+61 ILE A30 - GLN A31 : 3.83 A
+62 PRO A37 - PRO A38 : 3.81 A
+63 GLN A41 - ARG A42 : 3.81 A
+64 ASP A39 - GLN A40 : 3.81 A
+65 VAL A17 - GLU A18 : 3.78 A
+66 SER A20 - ASP A21 : 3.80 A
+67 THR A22 - THR A55 : 3.93 A
+68 GLY A53 - ARG A54 : 3.82 A
+69 GLU A51 - ASP A52 : 3.83 A
+70 ARG A42 - LEU A43 : 3.84 A
+71 THR A12 - ILE A13 : 3.79 A
+72 LYS A11 - THR A12 : 3.81 A
+73 GLY A10 - LYS A11 : 3.77 A
+74 THR A9 - GLY A10 : 3.77 A
+75 LEU A8 - THR A9 : 3.82 A
+76 LEU A69 - VAL A70 : 3.81 A
 
 Total pairs found: 76
 
@@ -396,1011 +94,541 @@ Output:
 
 Pairs of residues with CA atoms closer than 4.0 A
 
-... (The terminal cannot copy all contacts due to the large number of entries)
-
-Contact 336:
-  Residue 1: VAL B18  (CA serial 1203)
-  Residue 2: ASN B19  (CA serial 1210)
-  Distance: 3.95 A
-
-Contact 337:
-  Residue 1: VAL B20  (CA serial 1218)
-  Residue 2: ASP B21  (CA serial 1225)
-  Distance: 3.82 A
-
-Contact 338:
-  Residue 1: LEU B68  (CA serial 1588)
-  Residue 2: GLY B69  (CA serial 1596)
-  Distance: 3.70 A
-
-Contact 339:
-  Residue 1: VAL B67  (CA serial 1581)
-  Residue 2: LEU B68  (CA serial 1588)
-  Distance: 3.72 A
-
-Contact 340:
-  Residue 1: GLY B69  (CA serial 1596)
-  Residue 2: ALA B70  (CA serial 1600)
-  Distance: 3.72 A
-
-Contact 341:
-  Residue 1: LYS B66  (CA serial 1572)
-  Residue 2: VAL B67  (CA serial 1581)
-  Distance: 3.92 A
-
-Contact 342:
-  Residue 1: LYS B65  (CA serial 1563)
-  Residue 2: LYS B66  (CA serial 1572)
-  Distance: 3.34 A
-
-Contact 343:
-  Residue 1: ASN B19  (CA serial 1210)
-  Residue 2: VAL B20  (CA serial 1218)
-  Distance: 3.83 A
-
-Contact 344:
-  Residue 1: SER B72  (CA serial 1616)
-  Residue 2: ASP B73  (CA serial 1622)
-  Distance: 3.74 A
-
-Contact 345:
-  Residue 1: VAL B109  (CA serial 1903)
-  Residue 2: LEU B110  (CA serial 1910)
-  Distance: 3.88 A
-
-Contact 346:
-  Residue 1: GLU B26  (CA serial 1257)
-  Residue 2: ALA B27  (CA serial 1266)
-  Distance: 3.75 A
-
-Contact 347:
-  Residue 1: VAL B23  (CA serial 1242)
-  Residue 2: GLY B24  (CA serial 1249)
-  Distance: 3.79 A
-
-Contact 348:
-  Residue 1: GLU B22  (CA serial 1233)
-  Residue 2: VAL B23  (CA serial 1242)
-  Distance: 3.89 A
-
-Contact 349:
-  Residue 1: HIS B63  (CA serial 1549)
-  Residue 2: GLY B64  (CA serial 1559)
-  Distance: 3.77 A
-
-Contact 350:
-  Residue 1: VAL B60  (CA serial 1528)
-  Residue 2: LYS B61  (CA serial 1535)
-  Distance: 3.69 A
-
-Contact 351:
-  Residue 1: LYS B61  (CA serial 1535)
-  Residue 2: ALA B62  (CA serial 1544)
-  Distance: 3.87 A
-
-Contact 352:
-  Residue 1: LYS B59  (CA serial 1519)
-  Residue 2: VAL B60  (CA serial 1528)
-  Distance: 3.71 A
-
-Contact 353:
-  Residue 1: ALA B62  (CA serial 1544)
-  Residue 2: HIS B63  (CA serial 1549)
-  Distance: 3.73 A
-
-Contact 354:
-  Residue 1: PRO B58  (CA serial 1512)
-  Residue 2: LYS B59  (CA serial 1519)
-  Distance: 3.74 A
-
-Contact 355:
-  Residue 1: ALA B27  (CA serial 1266)
-  Residue 2: LEU B28  (CA serial 1271)
-  Distance: 3.83 A
-
-Contact 356:
-  Residue 1: GLY B25  (CA serial 1253)
-  Residue 2: GLU B26  (CA serial 1257)
-  Distance: 3.85 A
-
-Contact 357:
-  Residue 1: GLY B24  (CA serial 1249)
-  Residue 2: GLY B25  (CA serial 1253)
-  Distance: 3.75 A
-
-Contact 358:
-  Residue 1: ASP B21  (CA serial 1225)
-  Residue 2: GLU B22  (CA serial 1233)
-  Distance: 3.91 A
-
-Contact 359:
-  Residue 1: GLY B64  (CA serial 1559)
-  Residue 2: LYS B65  (CA serial 1563)
-  Distance: 3.56 A
-
-Contact 360:
-  Residue 1: ALA B76  (CA serial 1642)
-  Residue 2: HIS B77  (CA serial 1647)
-  Distance: 3.96 A
-
-Contact 361:
-  Residue 1: GLY B74  (CA serial 1630)
-  Residue 2: LEU B75  (CA serial 1634)
-  Distance: 3.79 A
-
-Contact 362:
-  Residue 1: PHE B71  (CA serial 1605)
-  Residue 2: SER B72  (CA serial 1616)
-  Distance: 3.93 A
-
-Contact 363:
-  Residue 1: ASP B73  (CA serial 1622)
-  Residue 2: GLY B74  (CA serial 1630)
-  Distance: 3.59 A
-
-Contact 364:
-  Residue 1: ALA B70  (CA serial 1600)
-  Residue 2: PHE B71  (CA serial 1605)
-  Distance: 3.81 A
-
-Contact 365:
-  Residue 1: ASN B108  (CA serial 1895)
-  Residue 2: VAL B109  (CA serial 1903)
-  Distance: 3.87 A
-
-Contact 366:
-  Residue 1: ALA B135  (CA serial 2106)
-  Residue 2: GLY B136  (CA serial 2111)
-  Distance: 3.98 A
-
-Contact 367:
-  Residue 1: VAL B133  (CA serial 2092)
-  Residue 2: VAL B134  (CA serial 2099)
-  Distance: 3.71 A
-
-Contact 368:
-  Residue 1: VAL B134  (CA serial 2099)
-  Residue 2: ALA B135  (CA serial 2106)
-  Distance: 3.87 A
-
-Contact 369:
-  Residue 1: VAL B11  (CA serial 1149)
-  Residue 2: THR B12  (CA serial 1156)
-  Distance: 3.73 A
-
-Contact 370:
-  Residue 1: THR B12  (CA serial 1156)
-  Residue 2: ALA B13  (CA serial 1163)
-  Distance: 3.67 A
-
-Contact 371:
-  Residue 1: LEU B14  (CA serial 1168)
-  Residue 2: TRP B15  (CA serial 1176)
-  Distance: 3.73 A
-
-Contact 372:
-  Residue 1: HIS B117  (CA serial 1961)
-  Residue 2: PHE B118  (CA serial 1971)
-  Distance: 3.81 A
-
-Contact 373:
-  Residue 1: HIS B116  (CA serial 1951)
-  Residue 2: HIS B117  (CA serial 1961)
-  Distance: 3.78 A
-
-Contact 374:
-  Residue 1: CYS B112  (CA serial 1925)
-  Residue 2: VAL B113  (CA serial 1931)
-  Distance: 3.74 A
-
-Contact 375:
-  Residue 1: VAL B113  (CA serial 1931)
-  Residue 2: LEU B114  (CA serial 1938)
-  Distance: 3.79 A
-
-Contact 376:
-  Residue 1: LEU B110  (CA serial 1910)
-  Residue 2: VAL B111  (CA serial 1918)
-  Distance: 3.85 A
-
-Contact 377:
-  Residue 1: LEU A86  (CA serial 634)
-  Residue 2: HIS A87  (CA serial 642)
-  Distance: 3.73 A
-
-Contact 378:
-  Residue 1: PRO A95  (CA serial 710)
-  Residue 2: VAL A96  (CA serial 717)
-  Distance: 3.78 A
-
-Contact 379:
-  Residue 1: PHE A98  (CA serial 732)
-  Residue 2: LYS A99  (CA serial 743)
-  Distance: 3.95 A
-
-Contact 380:
-  Residue 1: SER A102  (CA serial 768)
-  Residue 2: HIS A103  (CA serial 774)
-  Distance: 3.91 A
-
-Contact 381:
-  Residue 1: LEU A129  (CA serial 971)
-  Residue 2: ALA A130  (CA serial 979)
-  Distance: 3.75 A
-
-Contact 382:
-  Residue 1: ASN A97  (CA serial 724)
-  Residue 2: PHE A98  (CA serial 732)
-  Distance: 3.88 A
-
-Contact 383:
-  Residue 1: VAL A96  (CA serial 717)
-  Residue 2: ASN A97  (CA serial 724)
-  Distance: 3.74 A
-
-Contact 384:
-  Residue 1: LEU A101  (CA serial 760)
-  Residue 2: SER A102  (CA serial 768)
-  Distance: 3.91 A
-
-Contact 385:
-  Residue 1: ALA A82  (CA serial 607)
-  Residue 2: LEU A83  (CA serial 612)
-  Distance: 3.76 A
-
-Contact 386:
-  Residue 1: SER A81  (CA serial 601)
-  Residue 2: ALA A82  (CA serial 607)
-  Distance: 3.84 A
-
-Contact 387:
-  Residue 1: SER A84  (CA serial 620)
-  Residue 2: ASP A85  (CA serial 626)
-  Distance: 3.88 A
-
-Contact 388:
-  Residue 1: LEU A83  (CA serial 612)
-  Residue 2: SER A84  (CA serial 620)
-  Distance: 3.73 A
-
-Contact 389:
-  Residue 1: LEU A80  (CA serial 593)
-  Residue 2: SER A81  (CA serial 601)
-  Distance: 3.91 A
-
-Contact 390:
-  Residue 1: ALA A79  (CA serial 588)
-  Residue 2: LEU A80  (CA serial 593)
-  Distance: 3.95 A
-
-Contact 391:
-  Residue 1: ASN A78  (CA serial 580)
-  Residue 2: ALA A79  (CA serial 588)
-  Distance: 3.81 A
-
-Contact 392:
-  Residue 1: MET A76  (CA serial 565)
-  Residue 2: PRO A77  (CA serial 573)
-  Distance: 3.58 A
-
-Contact 393:
-  Residue 1: ASP A75  (CA serial 557)
-  Residue 2: MET A76  (CA serial 565)
-  Distance: 3.70 A
-
-Contact 394:
-  Residue 1: THR A134  (CA serial 1003)
-  Residue 2: VAL A135  (CA serial 1010)
-  Distance: 3.75 A
-
-Contact 395:
-  Residue 1: ASP A74  (CA serial 549)
-  Residue 2: ASP A75  (CA serial 557)
-  Distance: 3.94 A
-
-Contact 396:
-  Residue 1: SER A131  (CA serial 984)
-  Residue 2: VAL A132  (CA serial 990)
-  Distance: 3.74 A
-
-Contact 397:
-  Residue 1: PRO A77  (CA serial 573)
-  Residue 2: ASN A78  (CA serial 580)
-  Distance: 3.56 A
-
-Contact 398:
-  Residue 1: VAL A135  (CA serial 1010)
-  Residue 2: LEU A136  (CA serial 1017)
-  Distance: 3.90 A
-
-Contact 399:
-  Residue 1: ASP A85  (CA serial 626)
-  Residue 2: LEU A86  (CA serial 634)
-  Distance: 3.80 A
-
-Contact 400:
-  Residue 1: LEU A136  (CA serial 1017)
-  Residue 2: THR A137  (CA serial 1025)
-  Distance: 3.92 A
-
-Contact 401:
-  Residue 1: THR A137  (CA serial 1025)
-  Residue 2: SER A138  (CA serial 1032)
-  Distance: 3.76 A
-
-Contact 402:
-  Residue 1: VAL A132  (CA serial 990)
-  Residue 2: SER A133  (CA serial 997)
-  Distance: 3.93 A
-
-Contact 403:
-  Residue 1: SER A133  (CA serial 997)
-  Residue 2: THR A134  (CA serial 1003)
-  Distance: 3.72 A
-
-Contact 404:
-  Residue 1: ALA A130  (CA serial 979)
-  Residue 2: SER A131  (CA serial 984)
-  Distance: 3.79 A
-
-Contact 405:
-  Residue 1: LYS A60  (CA serial 449)
-  Residue 2: LYS A61  (CA serial 458)
-  Distance: 3.54 A
-
-Contact 406:
-  Residue 1: GLY A59  (CA serial 445)
-  Residue 2: LYS A60  (CA serial 449)
-  Distance: 3.71 A
-
-Contact 407:
-  Residue 1: GLY A22  (CA serial 151)
-  Residue 2: GLU A23  (CA serial 155)
-  Distance: 3.70 A
-
-Contact 408:
-  Residue 1: TYR A24  (CA serial 164)
-  Residue 2: GLY A25  (CA serial 176)
-  Distance: 3.97 A
-
-Contact 409:
-  Residue 1: LEU A105  (CA serial 790)
-  Residue 2: LEU A106  (CA serial 798)
-  Distance: 3.77 A
-
-Contact 410:
-  Residue 1: HIS A112  (CA serial 838)
-  Residue 2: LEU A113  (CA serial 848)
-  Distance: 3.90 A
-
-Contact 411:
-  Residue 1: GLY A25  (CA serial 176)
-  Residue 2: GLY A59  (CA serial 445)
-  Distance: 3.99 A
-
-Contact 412:
-  Residue 1: ALA A21  (CA serial 146)
-  Residue 2: GLY A22  (CA serial 151)
-  Distance: 3.81 A
-
-Contact 413:
-  Residue 1: GLU A23  (CA serial 155)
-  Residue 2: TYR A24  (CA serial 164)
-  Distance: 3.81 A
-
-Contact 414:
-  Residue 1: HIS A20  (CA serial 136)
-  Residue 2: ALA A21  (CA serial 146)
-  Distance: 3.94 A
-
-Contact 415:
-  Residue 1: ASP A64  (CA serial 479)
-  Residue 2: ALA A65  (CA serial 487)
-  Distance: 3.63 A
-
-Contact 416:
-  Residue 1: ALA A65  (CA serial 487)
-  Residue 2: LEU A66  (CA serial 492)
-  Distance: 3.63 A
-
-Contact 417:
-  Residue 1: THR A67  (CA serial 500)
-  Residue 2: ASN A68  (CA serial 507)
-  Distance: 3.83 A
-
-Contact 418:
-  Residue 1: ASN A68  (CA serial 507)
-  Residue 2: ALA A69  (CA serial 515)
-  Distance: 3.86 A
-
-Contact 419:
-  Residue 1: LEU A66  (CA serial 492)
-  Residue 2: THR A67  (CA serial 500)
-  Distance: 3.70 A
-
-Contact 420:
-  Residue 1: ALA A71  (CA serial 527)
-  Residue 2: HIS A72  (CA serial 532)
-  Distance: 3.61 A
-
-Contact 421:
-  Residue 1: TRP A14  (CA serial 93)
-  Residue 2: GLY A15  (CA serial 107)
-  Distance: 3.71 A
-
-Contact 422:
-  Residue 1: GLY A15  (CA serial 107)
-  Residue 2: LYS A16  (CA serial 111)
-  Distance: 3.96 A
-
-Contact 423:
-  Residue 1: ALA A13  (CA serial 88)
-  Residue 2: TRP A14  (CA serial 93)
-  Distance: 3.84 A
-
-Contact 424:
-  Residue 1: LYS A11  (CA serial 74)
-  Residue 2: ALA A12  (CA serial 83)
-  Distance: 3.60 A
-
-Contact 425:
-  Residue 1: VAL A10  (CA serial 67)
-  Residue 2: LYS A11  (CA serial 74)
-  Distance: 3.96 A
-
-Contact 426:
-  Residue 1: ALA A12  (CA serial 83)
-  Residue 2: ALA A13  (CA serial 88)
-  Distance: 3.75 A
-
-Contact 427:
-  Residue 1: ALA A69  (CA serial 515)
-  Residue 2: VAL A70  (CA serial 520)
-  Distance: 4.00 A
-
-Contact 428:
-  Residue 1: VAL A70  (CA serial 520)
-  Residue 2: ALA A71  (CA serial 527)
-  Distance: 3.97 A
-
-Contact 429:
-  Residue 1: HIS A72  (CA serial 532)
-  Residue 2: VAL A73  (CA serial 542)
-  Distance: 3.86 A
-
-Contact 430:
-  Residue 1: ALA A63  (CA serial 474)
-  Residue 2: ASP A64  (CA serial 479)
-  Distance: 3.60 A
-
-Contact 431:
-  Residue 1: GLY A18  (CA serial 127)
-  Residue 2: ALA A19  (CA serial 131)
-  Distance: 3.73 A
-
-Contact 432:
-  Residue 1: VAL A17  (CA serial 120)
-  Residue 2: GLY A18  (CA serial 127)
-  Distance: 3.76 A
-
-Contact 433:
-  Residue 1: LYS A16  (CA serial 111)
-  Residue 2: VAL A17  (CA serial 120)
-  Distance: 3.66 A
-
-Contact 434:
-  Residue 1: GLY A57  (CA serial 431)
-  Residue 2: HIS A58  (CA serial 435)
-  Distance: 3.76 A
-
-Contact 435:
-  Residue 1: HIS A58  (CA serial 435)
-  Residue 2: GLY A59  (CA serial 445)
-  Distance: 3.83 A
-
-Contact 436:
-  Residue 1: LYS A61  (CA serial 458)
-  Residue 2: VAL A62  (CA serial 467)
-  Distance: 3.78 A
-
-Contact 437:
-  Residue 1: VAL A62  (CA serial 467)
-  Residue 2: ALA A63  (CA serial 474)
-  Distance: 3.74 A
-
-Contact 438:
-  Residue 1: VAL A73  (CA serial 542)
-  Residue 2: ASP A74  (CA serial 549)
-  Distance: 3.69 A
-
-Contact 439:
-  Residue 1: ASP C94  (CA serial 2896)
-  Residue 2: PRO C95  (CA serial 2904)
-  Distance: 3.91 A
-
-Contact 440:
-  Residue 1: VAL B34  (CA serial 1317)
-  Residue 2: TYR B35  (CA serial 1324)
-  Distance: 3.88 A
-
-Contact 441:
-  Residue 1: TYR B35  (CA serial 1324)
-  Residue 2: PRO B36  (CA serial 1336)
-  Distance: 3.78 A
-
-Contact 442:
-  Residue 1: VAL C93  (CA serial 2889)
-  Residue 2: ASP C94  (CA serial 2896)
-  Distance: 3.63 A
-
-Contact 443:
-  Residue 1: LEU B31  (CA serial 1294)
-  Residue 2: LEU B32  (CA serial 1302)
-  Distance: 3.64 A
-
-Contact 444:
-  Residue 1: TRP B37  (CA serial 1343)
-  Residue 2: THR B38  (CA serial 1357)
-  Distance: 3.87 A
-
-Contact 445:
-  Residue 1: THR B38  (CA serial 1357)
-  Residue 2: GLN B39  (CA serial 1364)
-  Distance: 3.96 A
-
-Contact 446:
-  Residue 1: GLN B39  (CA serial 1364)
-  Residue 2: ARG B40  (CA serial 1373)
-  Distance: 3.83 A
-
-Contact 447:
-  Residue 1: ARG B40  (CA serial 1373)
-  Residue 2: PHE B41  (CA serial 1384)
-  Distance: 3.94 A
-
-Contact 448:
-  Residue 1: PHE B41  (CA serial 1384)
-  Residue 2: PHE B42  (CA serial 1395)
-  Distance: 3.82 A
-
-Contact 449:
-  Residue 1: PHE B42  (CA serial 1395)
-  Residue 2: GLU B43  (CA serial 1406)
-  Distance: 3.72 A
-
-Contact 450:
-  Residue 1: GLU B43  (CA serial 1406)
-  Residue 2: SER B44  (CA serial 1415)
-  Distance: 3.98 A
-
-Contact 451:
-  Residue 1: SER B44  (CA serial 1415)
-  Residue 2: PHE B45  (CA serial 1421)
-  Distance: 3.88 A
-
-Contact 452:
-  Residue 1: PRO B36  (CA serial 1336)
-  Residue 2: TRP B37  (CA serial 1343)
-  Distance: 3.79 A
-
-Contact 453:
-  Residue 1: LYS A127  (CA serial 951)
-  Residue 2: PHE A128  (CA serial 960)
-  Distance: 3.72 A
-
-Contact 454:
-  Residue 1: VAL A1  (CA serial 2)
-  Residue 2: LEU A2  (CA serial 9)
-  Distance: 3.70 A
-
-Contact 455:
-  Residue 1: THR C137  (CA serial 3219)
-  Residue 2: SER C138  (CA serial 3226)
-  Distance: 3.97 A
-
-Contact 456:
-  Residue 1: SER C138  (CA serial 3226)
-  Residue 2: LYS C139  (CA serial 3232)
-  Distance: 3.89 A
-
-Contact 457:
-  Residue 1: TYR C140  (CA serial 3241)
-  Residue 2: ARG C141  (CA serial 3253)
-  Distance: 3.71 A
-
-Contact 458:
-  Residue 1: LYS C139  (CA serial 3232)
-  Residue 2: TYR C140  (CA serial 3241)
-  Distance: 3.86 A
-
-Contact 459:
-  Residue 1: SER C84  (CA serial 2814)
-  Residue 2: ASP C85  (CA serial 2820)
-  Distance: 3.83 A
-
-Contact 460:
-  Residue 1: HIS C87  (CA serial 2836)
-  Residue 2: ALA C88  (CA serial 2846)
-  Distance: 3.90 A
-
-Contact 461:
-  Residue 1: ALA C88  (CA serial 2846)
-  Residue 2: HIS C89  (CA serial 2851)
-  Distance: 3.92 A
-
-Contact 462:
-  Residue 1: LEU C86  (CA serial 2828)
-  Residue 2: HIS C87  (CA serial 2836)
-  Distance: 3.64 A
-
-Contact 463:
-  Residue 1: ASP C85  (CA serial 2820)
-  Residue 2: LEU C86  (CA serial 2828)
-  Distance: 3.61 A
-
-Contact 464:
-  Residue 1: LEU C91  (CA serial 2870)
-  Residue 2: ARG C92  (CA serial 2878)
-  Distance: 3.80 A
-
-Contact 465:
-  Residue 1: HIS C89  (CA serial 2851)
-  Residue 2: LYS C90  (CA serial 2861)
-  Distance: 3.59 A
-
-Contact 466:
-  Residue 1: LYS C90  (CA serial 2861)
-  Residue 2: LEU C91  (CA serial 2870)
-  Distance: 3.95 A
-
-Contact 467:
-  Residue 1: ASP A126  (CA serial 943)
-  Residue 2: LYS A127  (CA serial 951)
-  Distance: 3.79 A
-
-Contact 468:
-  Residue 1: ARG C92  (CA serial 2878)
-  Residue 2: VAL C93  (CA serial 2889)
-  Distance: 3.90 A
-
-Contact 469:
-  Residue 1: ALA A115  (CA serial 863)
-  Residue 2: GLU A116  (CA serial 868)
-  Distance: 3.88 A
-
-Contact 470:
-  Residue 1: GLU A116  (CA serial 868)
-  Residue 2: PHE A117  (CA serial 877)
-  Distance: 3.85 A
-
-Contact 471:
-  Residue 1: PHE A117  (CA serial 877)
-  Residue 2: THR A118  (CA serial 888)
-  Distance: 3.78 A
-
-Contact 472:
-  Residue 1: HIS A122  (CA serial 914)
-  Residue 2: ALA A123  (CA serial 924)
-  Distance: 3.72 A
-
-Contact 473:
-  Residue 1: THR A118  (CA serial 888)
-  Residue 2: PRO A119  (CA serial 895)
-  Distance: 3.76 A
-
-Contact 474:
-  Residue 1: GLY B29  (CA serial 1279)
-  Residue 2: ARG B30  (CA serial 1283)
-  Distance: 3.78 A
-
-Contact 475:
-  Residue 1: VAL B54  (CA serial 1485)
-  Residue 2: MET B55  (CA serial 1492)
-  Distance: 3.60 A
-
-Contact 476:
-  Residue 1: MET B55  (CA serial 1492)
-  Residue 2: GLY B56  (CA serial 1500)
-  Distance: 3.73 A
-
-Contact 477:
-  Residue 1: ALA B53  (CA serial 1480)
-  Residue 2: VAL B54  (CA serial 1485)
-  Distance: 3.77 A
-
-Contact 478:
-  Residue 1: GLY B56  (CA serial 1500)
-  Residue 2: ASN B57  (CA serial 1504)
-  Distance: 3.82 A
-
-Contact 479:
-  Residue 1: SER A124  (CA serial 929)
-  Residue 2: LEU A125  (CA serial 935)
-  Distance: 3.75 A
-
-Contact 480:
-  Residue 1: LYS A7  (CA serial 43)
-  Residue 2: THR A8  (CA serial 52)
-  Distance: 3.64 A
-
-Contact 481:
-  Residue 1: ASP A6  (CA serial 35)
-  Residue 2: LYS A7  (CA serial 43)
-  Distance: 3.75 A
-
-Contact 482:
-  Residue 1: THR A8  (CA serial 52)
-  Residue 2: ASN A9  (CA serial 59)
-  Distance: 3.58 A
-
-Contact 483:
-  Residue 1: SER A3  (CA serial 17)
-  Residue 2: PRO A4  (CA serial 23)
-  Distance: 3.55 A
-
-Contact 484:
-  Residue 1: PRO B51  (CA serial 1465)
-  Residue 2: ASP B52  (CA serial 1472)
-  Distance: 3.84 A
-
-Contact 485:
-  Residue 1: THR B50  (CA serial 1458)
-  Residue 2: PRO B51  (CA serial 1465)
-  Distance: 3.78 A
-
-Contact 486:
-  Residue 1: SER B49  (CA serial 1452)
-  Residue 2: THR B50  (CA serial 1458)
-  Distance: 3.67 A
-
-Contact 487:
-  Residue 1: LEU B48  (CA serial 1444)
-  Residue 2: SER B49  (CA serial 1452)
-  Distance: 3.78 A
-
-Contact 488:
-  Residue 1: ASP B47  (CA serial 1436)
-  Residue 2: LEU B48  (CA serial 1444)
-  Distance: 3.97 A
-
-Contact 489:
-  Residue 1: PRO A4  (CA serial 23)
-  Residue 2: ALA A5  (CA serial 30)
-  Distance: 3.65 A
-
-Contact 490:
-  Residue 1: ALA A120  (CA serial 902)
-  Residue 2: VAL A121  (CA serial 907)
-  Distance: 3.75 A
-
-Contact 491:
-  Residue 1: ALA A123  (CA serial 924)
-  Residue 2: SER A124  (CA serial 929)
-  Distance: 3.79 A
-
-Contact 492:
-  Residue 1: VAL A121  (CA serial 907)
-  Residue 2: HIS A122  (CA serial 914)
-  Distance: 3.96 A
-
-Contact 493:
-  Residue 1: PRO A119  (CA serial 895)
-  Residue 2: ALA A120  (CA serial 902)
-  Distance: 3.59 A
-
-Contact 494:
-  Residue 1: ASP B52  (CA serial 1472)
-  Residue 2: ALA B53  (CA serial 1480)
-  Distance: 3.84 A
-
-Contact 495:
-  Residue 1: GLY B46  (CA serial 1432)
-  Residue 2: ASP B47  (CA serial 1436)
-  Distance: 3.88 A
-
-Contact 496:
-  Residue 1: VAL B33  (CA serial 1310)
-  Residue 2: VAL B34  (CA serial 1317)
-  Distance: 3.90 A
-
-Contact 497:
-  Residue 1: ARG B30  (CA serial 1283)
-  Residue 2: LEU B31  (CA serial 1294)
-  Distance: 3.86 A
-
-Contact 498:
-  Residue 1: LEU B32  (CA serial 1302)
-  Residue 2: VAL B33  (CA serial 1310)
-  Distance: 3.81 A
-
-Contact 499:
-  Residue 1: PHE B45  (CA serial 1421)
-  Residue 2: GLY B46  (CA serial 1432)
-  Distance: 3.74 A
-
-Contact 500:
-  Residue 1: LEU A125  (CA serial 935)
-  Residue 2: ASP A126  (CA serial 943)
-  Distance: 3.84 A
-
-Contact 501:
-  Residue 1: LEU A2  (CA serial 9)
-  Residue 2: SER A3  (CA serial 17)
-  Distance: 3.82 A
-
-Contact 502:
-  Residue 1: PHE A128  (CA serial 960)
-  Residue 2: LEU A129  (CA serial 971)
-  Distance: 3.82 A
-
-Contact 503:
-  Residue 1: LEU A109  (CA serial 820)
-  Residue 2: ALA A110  (CA serial 828)
-  Distance: 3.74 A
-
-Contact 504:
-  Residue 1: LEU A113  (CA serial 848)
-  Residue 2: PRO A114  (CA serial 856)
-  Distance: 3.98 A
-
-Contact 505:
-  Residue 1: ASN A9  (CA serial 59)
-  Residue 2: VAL A10  (CA serial 67)
-  Distance: 3.91 A
-
-Contact 506:
-  Residue 1: LEU A100  (CA serial 752)
-  Residue 2: LEU A101  (CA serial 760)
-  Distance: 3.80 A
-
-Contact 507:
-  Residue 1: HIS A103  (CA serial 774)
-  Residue 2: CYS A104  (CA serial 784)
-  Distance: 3.94 A
-
-Contact 508:
-  Residue 1: LYS A99  (CA serial 743)
-  Residue 2: LEU A100  (CA serial 752)
-  Distance: 3.61 A
-
-Contact 509:
-  Residue 1: CYS A104  (CA serial 784)
-  Residue 2: LEU A105  (CA serial 790)
-  Distance: 3.75 A
-
-Contact 510:
-  Residue 1: LYS A56  (CA serial 422)
-  Residue 2: GLY A57  (CA serial 431)
-  Distance: 3.66 A
-
-Contact 511:
-  Residue 1: ALA A26  (CA serial 180)
-  Residue 2: GLY A59  (CA serial 445)
-  Distance: 3.97 A
-
-Contact 512:
-  Residue 1: GLY A25  (CA serial 176)
-  Residue 2: ALA A26  (CA serial 180)
-  Distance: 3.61 A
-
-Contact 513:
-  Residue 1: THR A108  (CA serial 813)
-  Residue 2: LEU A109  (CA serial 820)
-  Distance: 3.81 A
-
-Contact 514:
-  Residue 1: ALA A111  (CA serial 833)
-  Residue 2: HIS A112  (CA serial 838)
-  Distance: 3.85 A
-
-Contact 515:
-  Residue 1: LEU A106  (CA serial 798)
-  Residue 2: VAL A107  (CA serial 806)
-  Distance: 3.66 A
-
-Contact 516:
-  Residue 1: ALA A110  (CA serial 828)
-  Residue 2: ALA A111  (CA serial 833)
-  Distance: 3.80 A
-
-Contact 517:
-  Residue 1: LEU B28  (CA serial 1271)
-  Residue 2: GLY B29  (CA serial 1279)
-  Distance: 3.60 A
-
-Contact 518:
-  Residue 1: ASN B57  (CA serial 1504)
-  Residue 2: PRO B58  (CA serial 1512)
-  Distance: 3.81 A
-
-Contact 519:
-  Residue 1: TYR D145  (CA serial 4366)
-  Residue 2: HIS D146  (CA serial 4378)
-  Distance: 3.94 A
-
-Contact 520:
-  Residue 1: SER B89  (CA serial 1740)
-  Residue 2: GLU B90  (CA serial 1746)
-  Distance: 3.57 A
-
-Contact 521:
-  Residue 1: LEU B141  (CA serial 2140)
-  Residue 2: ALA B142  (CA serial 2148)
-  Distance: 3.70 A
-
-Contact 522:
-  Residue 1: HIS B92  (CA serial 1763)
-  Residue 2: CYS B93  (CA serial 1773)
-  Distance: 3.82 A
-
-Contact 523:
-  Residue 1: GLU B90  (CA serial 1746)
-  Residue 2: LEU B91  (CA serial 1755)
-  Distance: 3.58 A
-
-Contact 524:
-  Residue 1: LYS B95  (CA serial 1787)
-  Residue 2: LEU B96  (CA serial 1796)
-  Distance: 3.64 A
-
-Contact 525:
-  Residue 1: HIS B97  (CA serial 1804)
-  Residue 2: VAL B98  (CA serial 1814)
-  Distance: 3.84 A
-
-Contact 526:
-  Residue 1: LEU B96  (CA serial 1796)
-  Residue 2: HIS B97  (CA serial 1804)
-  Distance: 3.71 A
-
-Contact 527:
-  Residue 1: LYS A90  (CA serial 667)
-  Residue 2: LEU A91  (CA serial 676)
-  Distance: 3.63 A
-
-Contact 528:
-  Residue 1: LEU A91  (CA serial 676)
-  Residue 2: ARG A92  (CA serial 684)
-  Distance: 3.88 A
-
-Contact 529:
-  Residue 1: HIS A87  (CA serial 642)
-  Residue 2: ALA A88  (CA serial 652)
-  Distance: 3.96 A
-
-Contact 530:
-  Residue 1: ARG A92  (CA serial 684)
-  Residue 2: VAL A93  (CA serial 695)
-  Distance: 3.72 A
-
-Contact 531:
-  Residue 1: VAL A93  (CA serial 695)
-  Residue 2: ASP A94  (CA serial 702)
-  Distance: 3.84 A
-
-Contact 532:
-  Residue 1: ASP A94  (CA serial 702)
-  Residue 2: PRO A95  (CA serial 710)
-  Distance: 3.87 A
-
-Contact 533:
-  Residue 1: SER A138  (CA serial 1032)
-  Residue 2: LYS A139  (CA serial 1038)
-  Distance: 3.83 A
-
-Contact 534:
-  Residue 1: PRO C95  (CA serial 2904)
-  Residue 2: VAL C96  (CA serial 2911)
-  Distance: 3.83 A
-
-Contact 535:
-  Residue 1: LEU C136  (CA serial 3211)
-  Residue 2: THR C137  (CA serial 3219)
-  Distance: 3.89 A
-
-Contact 536:
-  Residue 1: LEU C83  (CA serial 2806)
-  Residue 2: SER C84  (CA serial 2814)
-  Distance: 3.83 A
+1 LYS D65 - LYS D66 : 3.87 A
+2 LYS D66 - VAL D67 : 3.90 A
+3 VAL D67 - LEU D68 : 3.62 A
+4 VAL D20 - ASP D21 : 3.50 A
+5 GLY D69 - ALA D70 : 3.75 A
+6 LEU D68 - GLY D69 : 3.76 A
+7 SER D72 - ASP D73 : 3.57 A
+8 ASP D73 - GLY D74 : 3.57 A
+9 VAL D18 - ASN D19 : 3.69 A
+10 PHE D71 - SER D72 : 3.75 A
+11 GLY D74 - LEU D75 : 3.65 A
+12 ALA D70 - PHE D71 : 3.89 A
+13 ASN D19 - VAL D20 : 3.74 A
+14 PRO D58 - LYS D59 : 3.82 A
+15 LYS D59 - VAL D60 : 3.95 A
+16 LYS D61 - ALA D62 : 3.81 A
+17 VAL D60 - LYS D61 : 3.74 A
+18 VAL D23 - GLY D24 : 3.81 A
+19 GLU D26 - ALA D27 : 3.93 A
+20 LEU D106 - GLY D107 : 3.83 A
+21 VAL D109 - LEU D110 : 3.78 A
+22 GLY D25 - GLU D26 : 3.62 A
+23 ALA D27 - LEU D28 : 3.77 A
+24 ALA D62 - HIS D63 : 3.70 A
+25 HIS D63 - GLY D64 : 3.62 A
+26 GLY D64 - LYS D65 : 3.86 A
+27 ASP D21 - GLU D22 : 3.40 A
+28 GLU D90 - LEU D91 : 3.52 A
+29 SER D89 - GLU D90 : 3.86 A
+30 THR D87 - LEU D88 : 3.68 A
+31 ALA D86 - THR D87 : 3.83 A
+32 LEU D88 - SER D89 : 3.90 A
+33 LYS D144 - TYR D145 : 3.66 A
+34 LEU D141 - ALA D142 : 3.84 A
+35 ALA D140 - LEU D141 : 3.82 A
+36 ALA D142 - HIS D143 : 3.84 A
+37 LYS D82 - GLY D83 : 3.94 A
+38 LEU D81 - LYS D82 : 3.84 A
+39 HIS D143 - LYS D144 : 3.92 A
+40 LYS D95 - LEU D96 : 3.80 A
+41 PHE D41 - PHE D42 : 3.69 A
+42 LEU D96 - HIS D97 : 3.76 A
+43 HIS D97 - VAL D98 : 3.85 A
+44 ASP D99 - PRO D100 : 3.79 A
+45 ASN D102 - PHE D103 : 3.97 A
+46 GLU D101 - ASN D102 : 3.91 A
+47 PRO D100 - GLU D101 : 3.72 A
+48 PHE D103 - ARG D104 : 3.92 A
+49 ARG D104 - LEU D105 : 3.82 A
+50 ALA D138 - ASN D139 : 3.73 A
+51 VAL D98 - ASP D99 : 3.94 A
+52 ASP D94 - LYS D95 : 3.89 A
+53 LEU D91 - HIS D92 : 3.83 A
+54 CYS D93 - ASP D94 : 3.81 A
+55 VAL D137 - ALA D138 : 3.80 A
+56 THR D84 - PHE D85 : 3.89 A
+57 GLY D83 - THR D84 : 3.86 A
+58 LEU D105 - LEU D106 : 3.80 A
+59 HIS D77 - LEU D78 : 3.62 A
+60 GLY D16 - LYS D17 : 3.84 A
+61 TRP D15 - GLY D16 : 3.96 A
+62 LEU D14 - TRP D15 : 3.75 A
+63 ALA D13 - LEU D14 : 3.68 A
+64 THR D12 - ALA D13 : 3.74 A
+65 VAL D11 - THR D12 : 3.83 A
+66 LYS D8 - SER D9 : 3.56 A
+67 SER D9 - ALA D10 : 3.66 A
+68 LEU D3 - THR D4 : 3.91 A
+69 THR D4 - PRO D5 : 3.88 A
+70 PRO D5 - GLU D6 : 3.68 A
+71 HIS D117 - PHE D118 : 3.98 A
+72 LEU D114 - ALA D115 : 3.85 A
+73 GLU D121 - PHE D122 : 3.80 A
+74 PRO D125 - VAL D126 : 3.73 A
+75 THR D123 - PRO D124 : 3.73 A
+76 PRO D124 - PRO D125 : 3.68 A
+77 GLU C30 - ARG C31 : 3.73 A
+78 SER C49 - HIS C50 : 3.64 A
+79 PHE D122 - THR D123 : 3.79 A
+80 VAL D126 - GLN D127 : 3.81 A
+81 GLN D127 - ALA D128 : 3.74 A
+82 ALA D129 - TYR D130 : 3.85 A
+83 ALA D128 - ALA D129 : 3.71 A
+84 ASP D79 - ASN D80 : 3.84 A
+85 VAL D134 - ALA D135 : 3.84 A
+86 VAL D133 - VAL D134 : 3.77 A
+87 ALA D135 - GLY D136 : 3.93 A
+88 LYS D132 - VAL D133 : 3.87 A
+89 VAL D1 - HIS D2 : 3.66 A
+90 HIS B143 - LYS B144 : 3.96 A
+91 LYS B144 - TYR B145 : 3.81 A
+92 CYS B93 - ASP B94 : 3.74 A
+93 ASP B94 - LYS B95 : 3.74 A
+94 SER C35 - PHE C36 : 3.82 A
+95 LEU C34 - SER C35 : 3.73 A
+96 PHE C36 - PRO C37 : 3.67 A
+97 PRO C37 - THR C38 : 3.90 A
+98 THR C38 - THR C39 : 3.58 A
+99 LYS C40 - THR C41 : 3.87 A
+100 PHE C43 - PRO C44 : 3.85 A
+101 ASP C47 - LEU C48 : 3.82 A
+102 PRO C44 - HIS C45 : 3.89 A
+103 MET C32 - PHE C33 : 3.85 A
+104 PHE C33 - LEU C34 : 3.82 A
+105 THR C39 - LYS C40 : 3.89 A
+106 GLN D131 - LYS D132 : 3.76 A
+107 LEU D78 - ASP D79 : 3.33 A
+108 HIS D2 - LEU D3 : 3.69 A
+109 TYR D130 - GLN D131 : 3.84 A
+110 ARG C31 - MET C32 : 3.92 A
+111 LEU C48 - SER C49 : 3.97 A
+112 ALA D76 - HIS D77 : 3.49 A
+113 VAL D113 - LEU D114 : 3.85 A
+114 LEU D110 - VAL D111 : 3.92 A
+115 ASN D108 - VAL D109 : 3.69 A
+116 GLY D107 - ASN D108 : 3.77 A
+117 ASN D80 - LEU D81 : 3.62 A
+118 GLY D136 - VAL D137 : 3.69 A
+119 PHE D45 - GLY D46 : 3.47 A
+120 GLY D46 - ASP D47 : 3.99 A
+121 MET D55 - GLY D56 : 3.56 A
+122 VAL D54 - MET D55 : 3.89 A
+123 GLY D29 - ARG D30 : 3.66 A
+124 THR D50 - PRO D51 : 3.87 A
+125 PRO D51 - ASP D52 : 3.96 A
+126 ALA C120 - VAL C121 : 3.88 A
+127 VAL C121 - HIS C122 : 3.89 A
+128 ASN C9 - VAL C10 : 3.55 A
+129 GLU C116 - PHE C117 : 3.87 A
+130 ALA C115 - GLU C116 : 3.69 A
+131 VAL C10 - LYS C11 : 3.92 A
+132 LYS C11 - ALA C12 : 3.35 A
+133 ALA C12 - ALA C13 : 3.77 A
+134 PHE C117 - THR C118 : 3.70 A
+135 THR C8 - ASN C9 : 3.73 A
+136 ASP D52 - ALA D53 : 3.75 A
+137 PRO C119 - ALA C120 : 3.71 A
+138 THR C118 - PRO C119 : 3.76 A
+139 PRO C114 - ALA C115 : 3.97 A
+140 HIS A89 - LYS A90 : 3.61 A
+141 ALA A88 - HIS A89 : 3.76 A
+142 THR D38 - GLN D39 : 3.88 A
+143 TRP D37 - THR D38 : 3.81 A
+144 TYR D35 - PRO D36 : 3.94 A
+145 LEU D31 - LEU D32 : 3.66 A
+146 VAL D34 - TYR D35 : 3.84 A
+147 PRO D36 - TRP D37 : 3.67 A
+148 SER C3 - PRO C4 : 3.68 A
+149 VAL C1 - LEU C2 : 3.88 A
+150 LYS C127 - PHE C128 : 3.72 A
+151 PHE C128 - LEU C129 : 3.99 A
+152 ALA C130 - SER C131 : 3.81 A
+153 LEU C129 - ALA C130 : 3.90 A
+154 VAL C73 - ASP C74 : 3.95 A
+155 SER C124 - LEU C125 : 3.80 A
+156 LYS A139 - TYR A140 : 3.83 A
+157 TYR A140 - ARG A141 : 3.92 A
+158 ALA C123 - SER C124 : 3.80 A
+159 ASP C126 - LYS C127 : 3.84 A
+160 LEU C125 - ASP C126 : 3.85 A
+161 LEU D32 - VAL D33 : 3.89 A
+162 VAL D33 - VAL D34 : 3.68 A
+163 ARG D30 - LEU D31 : 3.66 A
+164 HIS C122 - ALA C123 : 3.80 A
+165 LEU D48 - SER D49 : 3.82 A
+166 SER D49 - THR D50 : 3.78 A
+167 PRO C4 - ALA C5 : 3.67 A
+168 ALA C5 - ASP C6 : 3.77 A
+169 LYS C7 - THR C8 : 3.49 A
+170 VAL C107 - THR C108 : 3.89 A
+171 GLY D119 - LYS D120 : 3.80 A
+172 ALA C111 - HIS C112 : 3.91 A
+173 THR C108 - LEU C109 : 3.92 A
+174 CYS C104 - LEU C105 : 3.62 A
+175 GLU C27 - ALA C28 : 3.99 A
+176 ALA C26 - GLU C27 : 3.87 A
+177 VAL C55 - LYS C56 : 3.84 A
+178 GLY C51 - SER C52 : 3.82 A
+179 SER C52 - ALA C53 : 3.82 A
+180 ALA C53 - GLN C54 : 3.61 A
+181 GLY C15 - LYS C16 : 3.81 A
+182 TRP C14 - GLY C15 : 3.98 A
+183 VAL C17 - GLY C18 : 3.62 A
+184 HIS C20 - ALA C21 : 3.97 A
+185 ALA C63 - ASP C64 : 3.70 A
+186 GLY C22 - GLU C23 : 3.72 A
+187 GLY C59 - LYS C60 : 3.75 A
+188 GLY C18 - ALA C19 : 3.28 A
+189 TYR C24 - GLY C25 : 3.75 A
+190 GLU C23 - TYR C24 : 3.81 A
+191 ALA C21 - GLY C22 : 3.79 A
+192 ALA C19 - HIS C20 : 3.99 A
+193 GLY C25 - ALA C26 : 3.87 A
+194 LYS C56 - GLY C57 : 3.62 A
+195 SER C102 - HIS C103 : 3.90 A
+196 SER C133 - THR C134 : 3.84 A
+197 LYS C99 - LEU C100 : 3.74 A
+198 PHE C98 - LYS C99 : 3.80 A
+199 VAL C132 - SER C133 : 3.82 A
+200 LYS C61 - VAL C62 : 3.95 A
+201 LEU C101 - SER C102 : 3.91 A
+202 VAL C96 - ASN C97 : 3.79 A
+203 LEU C100 - LEU C101 : 3.74 A
+204 ASN C97 - PHE C98 : 3.69 A
+205 ASP C75 - MET C76 : 3.80 A
+206 VAL C70 - ALA C71 : 4.00 A
+207 ALA C69 - VAL C70 : 3.98 A
+208 MET C76 - PRO C77 : 3.57 A
+209 ALA C71 - HIS C72 : 3.61 A
+210 PRO C77 - ASN C78 : 3.64 A
+211 ALA C79 - LEU C80 : 3.86 A
+212 SER C81 - ALA C82 : 3.73 A
+213 ALA C82 - LEU C83 : 3.79 A
+214 ASN C68 - ALA C69 : 3.87 A
+215 ASN C78 - ALA C79 : 3.41 A
+216 THR C134 - VAL C135 : 3.75 A
+217 VAL C135 - LEU C136 : 3.96 A
+218 HIS C103 - CYS C104 : 3.91 A
+219 ALA C28 - LEU C29 : 3.87 A
+220 VAL C62 - ALA C63 : 3.71 A
+221 HIS C58 - GLY C59 : 3.66 A
+222 LYS C60 - LYS C61 : 3.65 A
+223 GLY C57 - HIS C58 : 3.76 A
+224 LEU C66 - THR C67 : 3.84 A
+225 THR C67 - ASN C68 : 3.72 A
+226 ASP C64 - ALA C65 : 3.73 A
+227 LEU C106 - VAL C107 : 3.70 A
+228 ALA C110 - ALA C111 : 3.88 A
+229 LEU C109 - ALA C110 : 3.90 A
+230 LEU C105 - LEU C106 : 3.78 A
+231 HIS C112 - LEU C113 : 3.86 A
+232 ALA C13 - TRP C14 : 3.83 A
+233 SER C131 - VAL C132 : 3.93 A
+234 ASP C74 - ASP C75 : 3.83 A
+235 HIS C72 - VAL C73 : 3.37 A
+236 ASN D57 - PRO D58 : 3.79 A
+237 LEU D28 - GLY D29 : 3.78 A
+238 CYS D112 - VAL D113 : 3.83 A
+239 PHE D42 - GLU D43 : 3.70 A
+240 ARG D40 - PHE D41 : 3.95 A
+241 HIS D116 - HIS D117 : 3.79 A
+242 VAL D111 - CYS D112 : 3.77 A
+243 ALA D115 - HIS D116 : 3.87 A
+244 PHE D118 - GLY D119 : 3.83 A
+245 LYS D120 - GLU D121 : 3.67 A
+246 HIS C50 - GLY C51 : 3.72 A
+247 LEU C29 - GLU C30 : 3.68 A
+248 THR C41 - TYR C42 : 3.94 A
+249 TYR C42 - PHE C43 : 3.94 A
+250 PHE C46 - ASP C47 : 3.83 A
+251 HIS C45 - PHE C46 : 3.66 A
+252 LEU A34 - SER A35 : 3.76 A
+253 THR B4 - PRO B5 : 3.52 A
+254 HIS B2 - LEU B3 : 3.81 A
+255 ALA B129 - TYR B130 : 3.77 A
+256 VAL B1 - HIS B2 : 3.65 A
+257 GLN B131 - LYS B132 : 3.69 A
+258 LYS B132 - VAL B133 : 3.94 A
+259 TYR B130 - GLN B131 : 3.76 A
+260 LEU B3 - THR B4 : 3.59 A
+261 ALA B128 - ALA B129 : 3.76 A
+262 HIS A45 - PHE A46 : 3.90 A
+263 PHE A46 - ASP A47 : 3.67 A
+264 PHE A43 - PRO A44 : 3.68 A
+265 THR A41 - TYR A42 : 3.79 A
+266 LYS A40 - THR A41 : 3.90 A
+267 THR A38 - THR A39 : 3.86 A
+268 MET A32 - PHE A33 : 3.84 A
+269 ARG A31 - MET A32 : 3.76 A
+270 THR A39 - LYS A40 : 3.61 A
+271 ASP A47 - LEU A48 : 3.64 A
+272 PHE A33 - LEU A34 : 3.66 A
+273 PRO A37 - THR A38 : 3.72 A
+274 PHE A36 - PRO A37 : 3.69 A
+275 SER A35 - PHE A36 : 3.89 A
+276 SER A49 - HIS A50 : 3.55 A
+277 PRO B124 - PRO B125 : 3.85 A
+278 THR B123 - PRO B124 : 3.88 A
+279 PRO B125 - VAL B126 : 3.67 A
+280 LYS B120 - GLU B121 : 3.66 A
+281 SER B9 - ALA B10 : 3.75 A
+282 LYS B8 - SER B9 : 3.58 A
+283 ALA B13 - LEU B14 : 3.76 A
+284 PHE B122 - THR B123 : 3.81 A
+285 VAL B126 - GLN B127 : 3.77 A
+286 GLU B121 - PHE B122 : 3.91 A
+287 SER A52 - ALA A53 : 3.46 A
+288 GLY A51 - SER A52 : 3.84 A
+289 VAL A55 - LYS A56 : 3.68 A
+290 ALA A26 - GLU A27 : 3.91 A
+291 GLU A27 - ALA A28 : 3.77 A
+292 VAL A107 - THR A108 : 3.78 A
+293 ALA B115 - HIS B116 : 3.85 A
+294 LEU B114 - ALA B115 : 3.73 A
+295 VAL B111 - CYS B112 : 3.96 A
+296 HIS A50 - GLY A51 : 3.65 A
+297 GLY B119 - LYS B120 : 3.66 A
+298 PHE B118 - GLY B119 : 3.88 A
+299 LEU A48 - SER A49 : 3.95 A
+300 PRO B5 - GLU B6 : 3.70 A
+301 GLN B127 - ALA B128 : 3.71 A
+302 GLU B7 - LYS B8 : 3.74 A
+303 ALA A53 - GLN A54 : 3.86 A
+304 GLN A54 - VAL A55 : 3.85 A
+305 LEU A29 - GLU A30 : 3.79 A
+306 ALA A28 - LEU A29 : 3.81 A
+307 GLU A30 - ARG A31 : 3.75 A
+308 GLY B136 - VAL B137 : 3.74 A
+309 HIS B77 - LEU B78 : 3.82 A
+310 LEU B81 - LYS B82 : 3.68 A
+311 GLY B83 - THR B84 : 3.80 A
+312 THR B84 - PHE B85 : 3.93 A
+313 PHE B85 - ALA B86 : 3.77 A
+314 ALA B86 - THR B87 : 3.55 A
+315 LEU B88 - SER B89 : 3.79 A
+316 THR B87 - LEU B88 : 3.83 A
+317 LYS B82 - GLY B83 : 3.72 A
+318 GLY B107 - ASN B108 : 3.80 A
+319 LEU B106 - GLY B107 : 3.80 A
+320 ARG B104 - LEU B105 : 3.78 A
+321 LEU B105 - LEU B106 : 3.88 A
+322 ALA B138 - ASN B139 : 3.70 A
+323 ASN B102 - PHE B103 : 3.80 A
+324 VAL B98 - ASP B99 : 3.95 A
+325 LEU B91 - HIS B92 : 3.54 A
+326 PHE B103 - ARG B104 : 3.83 A
+327 GLU B101 - ASN B102 : 3.81 A
+328 PRO B100 - GLU B101 : 3.87 A
+329 ASN B139 - ALA B140 : 3.74 A
+330 VAL B137 - ALA B138 : 3.85 A
+331 ALA B140 - LEU B141 : 3.86 A
+332 TRP B15 - GLY B16 : 3.84 A
+333 GLY B16 - LYS B17 : 3.62 A
+334 LYS B17 - VAL B18 : 3.85 A
+335 LEU B75 - ALA B76 : 3.66 A
+336 VAL B18 - ASN B19 : 3.95 A
+337 VAL B20 - ASP B21 : 3.82 A
+338 LEU B68 - GLY B69 : 3.70 A
+339 VAL B67 - LEU B68 : 3.72 A
+340 GLY B69 - ALA B70 : 3.72 A
+341 LYS B66 - VAL B67 : 3.92 A
+342 LYS B65 - LYS B66 : 3.34 A
+343 ASN B19 - VAL B20 : 3.83 A
+344 SER B72 - ASP B73 : 3.74 A
+345 VAL B109 - LEU B110 : 3.88 A
+346 GLU B26 - ALA B27 : 3.75 A
+347 VAL B23 - GLY B24 : 3.79 A
+348 GLU B22 - VAL B23 : 3.89 A
+349 HIS B63 - GLY B64 : 3.77 A
+350 VAL B60 - LYS B61 : 3.69 A
+351 LYS B61 - ALA B62 : 3.87 A
+352 LYS B59 - VAL B60 : 3.71 A
+353 ALA B62 - HIS B63 : 3.73 A
+354 PRO B58 - LYS B59 : 3.74 A
+355 ALA B27 - LEU B28 : 3.83 A
+356 GLY B25 - GLU B26 : 3.85 A
+357 GLY B24 - GLY B25 : 3.75 A
+358 ASP B21 - GLU B22 : 3.91 A
+359 GLY B64 - LYS B65 : 3.56 A
+360 ALA B76 - HIS B77 : 3.96 A
+361 GLY B74 - LEU B75 : 3.79 A
+362 PHE B71 - SER B72 : 3.93 A
+363 ASP B73 - GLY B74 : 3.59 A
+364 ALA B70 - PHE B71 : 3.81 A
+365 ASN B108 - VAL B109 : 3.87 A
+366 ALA B135 - GLY B136 : 3.98 A
+367 VAL B133 - VAL B134 : 3.71 A
+368 VAL B134 - ALA B135 : 3.87 A
+369 VAL B11 - THR B12 : 3.73 A
+370 THR B12 - ALA B13 : 3.67 A
+371 LEU B14 - TRP B15 : 3.73 A
+372 HIS B117 - PHE B118 : 3.81 A
+373 HIS B116 - HIS B117 : 3.78 A
+374 CYS B112 - VAL B113 : 3.74 A
+375 VAL B113 - LEU B114 : 3.79 A
+376 LEU B110 - VAL B111 : 3.85 A
+377 LEU A86 - HIS A87 : 3.73 A
+378 PRO A95 - VAL A96 : 3.78 A
+379 PHE A98 - LYS A99 : 3.95 A
+380 SER A102 - HIS A103 : 3.91 A
+381 LEU A129 - ALA A130 : 3.75 A
+382 ASN A97 - PHE A98 : 3.88 A
+383 VAL A96 - ASN A97 : 3.74 A
+384 LEU A101 - SER A102 : 3.91 A
+385 ALA A82 - LEU A83 : 3.76 A
+386 SER A81 - ALA A82 : 3.84 A
+387 SER A84 - ASP A85 : 3.88 A
+388 LEU A83 - SER A84 : 3.73 A
+389 LEU A80 - SER A81 : 3.91 A
+390 ALA A79 - LEU A80 : 3.95 A
+391 ASN A78 - ALA A79 : 3.81 A
+392 MET A76 - PRO A77 : 3.58 A
+393 ASP A75 - MET A76 : 3.70 A
+394 THR A134 - VAL A135 : 3.75 A
+395 ASP A74 - ASP A75 : 3.94 A
+396 SER A131 - VAL A132 : 3.74 A
+397 PRO A77 - ASN A78 : 3.56 A
+398 VAL A135 - LEU A136 : 3.90 A
+399 ASP A85 - LEU A86 : 3.80 A
+400 LEU A136 - THR A137 : 3.92 A
+401 THR A137 - SER A138 : 3.76 A
+402 VAL A132 - SER A133 : 3.93 A
+403 SER A133 - THR A134 : 3.72 A
+404 ALA A130 - SER A131 : 3.79 A
+405 LYS A60 - LYS A61 : 3.54 A
+406 GLY A59 - LYS A60 : 3.71 A
+407 GLY A22 - GLU A23 : 3.70 A
+408 TYR A24 - GLY A25 : 3.97 A
+409 LEU A105 - LEU A106 : 3.77 A
+410 HIS A112 - LEU A113 : 3.90 A
+411 GLY A25 - GLY A59 : 3.99 A
+412 ALA A21 - GLY A22 : 3.81 A
+413 GLU A23 - TYR A24 : 3.81 A
+414 HIS A20 - ALA A21 : 3.94 A
+415 ASP A64 - ALA A65 : 3.63 A
+416 ALA A65 - LEU A66 : 3.63 A
+417 THR A67 - ASN A68 : 3.83 A
+418 ASN A68 - ALA A69 : 3.86 A
+419 LEU A66 - THR A67 : 3.70 A
+420 ALA A71 - HIS A72 : 3.61 A
+421 TRP A14 - GLY A15 : 3.71 A
+422 GLY A15 - LYS A16 : 3.96 A
+423 ALA A13 - TRP A14 : 3.84 A
+424 LYS A11 - ALA A12 : 3.60 A
+425 VAL A10 - LYS A11 : 3.96 A
+426 ALA A12 - ALA A13 : 3.75 A
+427 ALA A69 - VAL A70 : 4.00 A
+428 VAL A70 - ALA A71 : 3.97 A
+429 HIS A72 - VAL A73 : 3.86 A
+430 ALA A63 - ASP A64 : 3.60 A
+431 GLY A18 - ALA A19 : 3.73 A
+432 VAL A17 - GLY A18 : 3.76 A
+433 LYS A16 - VAL A17 : 3.66 A
+434 GLY A57 - HIS A58 : 3.76 A
+435 HIS A58 - GLY A59 : 3.83 A
+436 LYS A61 - VAL A62 : 3.78 A
+437 VAL A62 - ALA A63 : 3.74 A
+438 VAL A73 - ASP A74 : 3.69 A
+439 ASP C94 - PRO C95 : 3.91 A
+440 VAL B34 - TYR B35 : 3.88 A
+441 TYR B35 - PRO B36 : 3.78 A
+442 VAL C93 - ASP C94 : 3.63 A
+443 LEU B31 - LEU B32 : 3.64 A
+444 TRP B37 - THR B38 : 3.87 A
+445 THR B38 - GLN B39 : 3.96 A
+446 GLN B39 - ARG B40 : 3.83 A
+447 ARG B40 - PHE B41 : 3.94 A
+448 PHE B41 - PHE B42 : 3.82 A
+449 PHE B42 - GLU B43 : 3.72 A
+450 GLU B43 - SER B44 : 3.98 A
+451 SER B44 - PHE B45 : 3.88 A
+452 PRO B36 - TRP B37 : 3.79 A
+453 LYS A127 - PHE A128 : 3.72 A
+454 VAL A1 - LEU A2 : 3.70 A
+455 THR C137 - SER C138 : 3.97 A
+456 SER C138 - LYS C139 : 3.89 A
+457 TYR C140 - ARG C141 : 3.71 A
+458 LYS C139 - TYR C140 : 3.86 A
+459 SER C84 - ASP C85 : 3.83 A
+460 HIS C87 - ALA C88 : 3.90 A
+461 ALA C88 - HIS C89 : 3.92 A
+462 LEU C86 - HIS C87 : 3.64 A
+463 ASP C85 - LEU C86 : 3.61 A
+464 LEU C91 - ARG C92 : 3.80 A
+465 HIS C89 - LYS C90 : 3.59 A
+466 LYS C90 - LEU C91 : 3.95 A
+467 ASP A126 - LYS A127 : 3.79 A
+468 ARG C92 - VAL C93 : 3.90 A
+469 ALA A115 - GLU A116 : 3.88 A
+470 GLU A116 - PHE A117 : 3.85 A
+471 PHE A117 - THR A118 : 3.78 A
+472 HIS A122 - ALA A123 : 3.72 A
+473 THR A118 - PRO A119 : 3.76 A
+474 GLY B29 - ARG B30 : 3.78 A
+475 VAL B54 - MET B55 : 3.60 A
+476 MET B55 - GLY B56 : 3.73 A
+477 ALA B53 - VAL B54 : 3.77 A
+478 GLY B56 - ASN B57 : 3.82 A
+479 SER A124 - LEU A125 : 3.75 A
+480 LYS A7 - THR A8 : 3.64 A
+481 ASP A6 - LYS A7 : 3.75 A
+482 THR A8 - ASN A9 : 3.58 A
+483 SER A3 - PRO A4 : 3.55 A
+484 PRO B51 - ASP B52 : 3.84 A
+485 THR B50 - PRO B51 : 3.78 A
+486 SER B49 - THR B50 : 3.67 A
+487 LEU B48 - SER B49 : 3.78 A
+488 ASP B47 - LEU B48 : 3.97 A
+489 PRO A4 - ALA A5 : 3.65 A
+490 ALA A120 - VAL A121 : 3.75 A
+491 ALA A123 - SER A124 : 3.79 A
+492 VAL A121 - HIS A122 : 3.96 A
+493 PRO A119 - ALA A120 : 3.59 A
+494 ASP B52 - ALA B53 : 3.84 A
+495 GLY B46 - ASP B47 : 3.88 A
+496 VAL B33 - VAL B34 : 3.90 A
+497 ARG B30 - LEU B31 : 3.86 A
+498 LEU B32 - VAL B33 : 3.81 A
+499 PHE B45 - GLY B46 : 3.74 A
+500 LEU A125 - ASP A126 : 3.84 A
+501 LEU A2 - SER A3 : 3.82 A
+502 PHE A128 - LEU A129 : 3.82 A
+503 LEU A109 - ALA A110 : 3.74 A
+504 LEU A113 - PRO A114 : 3.98 A
+505 ASN A9 - VAL A10 : 3.91 A
+506 LEU A100 - LEU A101 : 3.80 A
+507 HIS A103 - CYS A104 : 3.94 A
+508 LYS A99 - LEU A100 : 3.61 A
+509 CYS A104 - LEU A105 : 3.75 A
+510 LYS A56 - GLY A57 : 3.66 A
+511 ALA A26 - GLY A59 : 3.97 A
+512 GLY A25 - ALA A26 : 3.61 A
+513 THR A108 - LEU A109 : 3.81 A
+514 ALA A111 - HIS A112 : 3.85 A
+515 LEU A106 - VAL A107 : 3.66 A
+516 ALA A110 - ALA A111 : 3.80 A
+517 LEU B28 - GLY B29 : 3.60 A
+518 ASN B57 - PRO B58 : 3.81 A
+519 TYR D145 - HIS D146 : 3.94 A
+520 SER B89 - GLU B90 : 3.57 A
+521 LEU B141 - ALA B142 : 3.70 A
+522 HIS B92 - CYS B93 : 3.82 A
+523 GLU B90 - LEU B91 : 3.58 A
+524 LYS B95 - LEU B96 : 3.64 A
+525 HIS B97 - VAL B98 : 3.84 A
+526 LEU B96 - HIS B97 : 3.71 A
+527 LYS A90 - LEU A91 : 3.63 A
+528 LEU A91 - ARG A92 : 3.88 A
+529 HIS A87 - ALA A88 : 3.96 A
+530 ARG A92 - VAL A93 : 3.72 A
+531 VAL A93 - ASP A94 : 3.84 A
+532 ASP A94 - PRO A95 : 3.87 A
+533 SER A138 - LYS A139 : 3.83 A
+534 PRO C95 - VAL C96 : 3.83 A
+535 LEU C136 - THR C137 : 3.89 A
+536 LEU C83 - SER C84 : 3.83 A
 
 Total pairs found: 536
