@@ -4,9 +4,69 @@ Alicia Mañas, Lídia Sanchez and Paula Artiz
 Exercise 7 - Inputs and outputs
 
 # 1. Structure: 1UBQ
-Input: 
+Input: python Exercise_7.py 1UBQ.pdb 1 5
 Output:
+Residue 1 is MET
+Residue 2 is VAL
 
+Atom1 Atom2 dist1 dist2
+-------------------------
+<Atom N> <Atom N> 12.778415 12.778415
+<Atom N> <Atom CA> 13.795244 13.795244
+<Atom N> <Atom C> 15.138346 15.138346
+<Atom N> <Atom O> 15.337095 15.337095
+<Atom N> <Atom CB> 13.780381 13.780381
+<Atom N> <Atom CG1> 15.008399 15.008399
+<Atom N> <Atom CG2> 12.512225 12.512225
+<Atom CA> <Atom N> 12.036006 12.036006
+<Atom CA> <Atom CA> 13.112686 13.112686
+<Atom CA> <Atom C> 14.413605 14.413605
+<Atom CA> <Atom O> 14.65299 14.65299
+<Atom CA> <Atom CB> 13.250729 13.250729
+<Atom CA> <Atom CG1> 14.513333 14.513333
+<Atom CA> <Atom CG2> 12.055878 12.055879
+<Atom C> <Atom N> 10.601512 10.601512
+<Atom C> <Atom CA> 11.705978 11.705978
+<Atom C> <Atom C> 12.9838915 12.9838915
+<Atom C> <Atom O> 13.17652 13.17652
+<Atom C> <Atom CB> 11.835214 11.835214
+<Atom C> <Atom CG1> 13.136376 13.136375
+<Atom C> <Atom CG2> 10.682021 10.682021
+<Atom O> <Atom N> 10.138056 10.138056
+<Atom O> <Atom CA> 11.166673 11.166673
+<Atom O> <Atom C> 12.495089 12.49509
+<Atom O> <Atom O> 12.669703 12.669703
+<Atom O> <Atom CB> 11.153963 11.153963
+<Atom O> <Atom CG1> 12.42039 12.42039
+<Atom O> <Atom CG2> 9.930338 9.930338
+<Atom CB> <Atom N> 12.145193 12.145193
+<Atom CB> <Atom CA> 13.1579485 13.157949
+<Atom CB> <Atom C> 14.490384 14.490384
+<Atom CB> <Atom O> 14.852276 14.852276
+<Atom CB> <Atom CB> 13.368337 13.368337
+<Atom CB> <Atom CG1> 14.560805 14.560805
+<Atom CB> <Atom CG2> 12.150309 12.150309
+<Atom CG> <Atom N> 11.2470875 11.2470875
+<Atom CG> <Atom CA> 12.156425 12.156425
+<Atom CG> <Atom C> 13.545595 13.545594
+<Atom CG> <Atom O> 13.979421 13.979421
+<Atom CG> <Atom CB> 12.318902 12.318902
+<Atom CG> <Atom CG1> 13.435707 13.435707
+<Atom CG> <Atom CG2> 11.044855 11.044855
+<Atom SD> <Atom N> 12.057613 12.057613
+<Atom SD> <Atom CA> 12.865554 12.865553
+<Atom SD> <Atom C> 14.262021 14.262021
+<Atom SD> <Atom O> 14.829439 14.829439
+<Atom SD> <Atom CB> 13.104097 13.104097
+<Atom SD> <Atom CG1> 14.107806 14.107807
+<Atom SD> <Atom CG2> 11.831318 11.831318
+<Atom CE> <Atom N> 11.216205 11.216205
+<Atom CE> <Atom CA> 11.863937 11.863937
+<Atom CE> <Atom C> 13.310311 13.310311
+<Atom CE> <Atom O> 13.954061 13.954061
+<Atom CE> <Atom CB> 12.021181 12.021182
+<Atom CE> <Atom CG1> 12.901461 12.901461
+<Atom CE> <Atom CG2> 10.697535 10.697535
 # 2. Structure: 4HHB
 Input: python Exercise_7.py 4HHB.pdb 9 7
 Output:
