@@ -3,7 +3,7 @@
 
 #!/usr/bin/env python
 
-#Exercise 2
+# Exercise 2
 
 import argparse
 from Bio.PDB.PDBParser import PDBParser
