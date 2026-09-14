@@ -4,71 +4,63 @@
 #!/usr/bin/env python
 
 # Exercise 1
-"""
-Usage (from terminal):
-    python Exercise_1.py structure.pdb 5.0
-    python Exercise_1.py --dist 5.0 structure.pdb
-"""
+# Usage (from terminal): python Exercise_1.py structure.pdb 5.0
 
 import argparse
-import os
-
-from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.NeighborSearch import NeighborSearch
+from Bio.PDB.PDBParser import PDBParser
 
+# argparse, following ex_cmd_line.py
+parser = argparse.ArgumentParser(
+    prog='Exercise_1',
+    description='List pairs of residues whose CA atoms are closer than a given distance')
 
-def get_label(residue):
-    seg = residue.get_parent().id
-    num = residue.id[1]
-    ins = residue.id[2].strip()
-    return f"{residue.get_resname()} {seg}{num}{ins}"
+parser.add_argument(
+    'input_pdb',
+    help='Input PDB file')
 
+parser.add_argument(
+    'distance',
+    type=float,
+    help='Distance threshold (Angstrom) to consider two residues in contact')
 
-def main():
-    argp = argparse.ArgumentParser(
-        prog='Exercise_1',
-        description='List pairs of residues whose CA atoms are closer than a given distance')
+args = parser.parse_args()
 
-    argp.add_argument(
-        '--dist',
-        dest='cutoff',
-        type=float,
-        default=5.0,
-        help='Distance threshold in Angstroms (default: 5.0)')
+pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
 
-    argp.add_argument(
-        'input_pdb',
-        help='Input PDB file')
+# load structure from PDB file (as in ex_distances.py)
+st = pdb_parser.get_structure('structure', args.input_pdb)
 
-    opts = argp.parse_args()
+select = []
 
-    struct_name = os.path.splitext(os.path.basename(opts.input_pdb))[0]
+# Select only CA atoms
+for at in st.get_atoms():
+    if at.id == 'CA':
+        select.append(at)
 
-    reader = PDBParser(PERMISSIVE=1, QUIET=True)
-    structure = reader.get_structure(struct_name, opts.input_pdb)
+# Preparing search
+nbsearch = NeighborSearch(select)
 
-    ca_list = [a for a in structure.get_atoms() if a.id == 'CA']
+print(f"Pairs of residues with CA atoms closer than {args.distance} A")
+print("-" * 60)
 
-    searcher = NeighborSearch(ca_list)
+# Searching for contacts under the given distance
+ncontact = 1
 
-    found = []
-    for a1, a2 in searcher.search_all(opts.cutoff):
-        r1 = a1.get_parent()
-        r2 = a2.get_parent()
-        if r1 is r2:
-            continue
-        d = a1 - a2
-        found.append((r1, r2, d))
+for at1, at2 in nbsearch.search_all(args.distance):
+    res1 = at1.get_parent()
+    res2 = at2.get_parent()
 
-    found.sort(key=lambda p: (p[0].get_parent().id, p[0].id[1], p[1].get_parent().id, p[1].id[1]))
+    if res1 == res2:
+        continue
 
-    print(f"Pairs of residues with CA-CA distance < {opts.cutoff} A")
-    print("-" * 60)
-    for r1, r2, d in found:
-        print(f"{get_label(r1):>12} -- {get_label(r2):<12}  {d:6.2f} A")
+    print(f"Contact {ncontact}:")
+    print(f"  Res 1: {res1.get_resname()} {res1.get_parent().id}{res1.id[1]}"
+          f"  (CA serial {at1.get_serial_number()})")
+    print(f"  Res 2: {res2.get_resname()} {res2.get_parent().id}{res2.id[1]}"
+          f"  (CA serial {at2.get_serial_number()})")
+    print(f"  Distance: {at1 - at2:.2f} A")
+    print()
+    ncontact += 1
 
-    print(f"\nTotal pairs found: {len(found)}")
-
-
-if __name__ == '__main__':
-    main()
+print(f"Total pairs found: {ncontact - 1}")
