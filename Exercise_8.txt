@@ -111,6 +111,7 @@ Atom1 Atom2 dist1 dist2
 <Atom CE> <Atom CB> 12.021181 12.021182
 <Atom CE> <Atom CG1> 12.901461 12.901461
 <Atom CE> <Atom CG2> 10.697535 10.697535
+
 # 2. Structure: 4HHB
 Input: Example exercise 7 (python Ex_7.py 4hhb.pdb 1 5)
 Output:
