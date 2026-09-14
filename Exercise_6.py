@@ -1,12 +1,11 @@
+# Practical 1 - PDB
+# Alicia Mañas, Lídia Sanchez and Paula Artiz
+
 #!/usr/bin/env python
 
-""" Exercise 6
-Disulphide bonds are formed between S atoms (SG) of Cys residues when they
-are at the appropriate distance (around 1.9 A). A wider cut-off is allowed
-by default to account for structural variability.
+# Exercise 6
 
-Parameters: PDB file name. Optional: cut-off distance (defaults to 2.5)
-
+"""
 Usage (from terminal):
     python Exercise_6.py structure.pdb
     python Exercise_6.py structure.pdb --cutoff 2.2
@@ -14,79 +13,71 @@ Usage (from terminal):
 
 import argparse
 import os
-
+ 
 from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.NeighborSearch import NeighborSearch
-
-
-def residue_id(res):
-    chain_id = res.get_parent().id
-    resnum = res.id[1]
-    icode = res.id[2].strip()
-    return f"{res.get_resname()} {chain_id}{resnum}{icode}"
-
-
+ 
+ 
+def get_label(residue):
+    seg = residue.get_parent().id
+    num = residue.id[1]
+    ins = residue.id[2].strip()
+    return f"{residue.get_resname()} {seg}{num}{ins}"
+ 
+ 
 def main():
-    parser = argparse.ArgumentParser(
+    argp = argparse.ArgumentParser(
         prog='Exercise_6',
-        description='List possible disulphide bonds (Cys SG-SG contacts)'
-    )
-
-    parser.add_argument(
+        description='List possible disulphide bonds (Cys SG-SG contacts)')
+ 
+    argp.add_argument(
         '--cutoff',
         dest='cutoff',
         type=float,
         default=1.9,
-        help='Distance criterium (dist < 1.9 A)'
-    )
-
-    parser.add_argument(
-        'pdb_file',
-        help='PDB file'  # 1UBQ.pdb or 4HHB.pdb
-    )
-
-    args = parser.parse_args()
-
-    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
-
-    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
-    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
-
-    # Select only the side-chain sulfur (SG) atoms of Cys residues
-    sg_atoms = [
-        at for at in st.get_atoms()
-        if at.get_parent().get_resname() == 'CYS' and at.get_name() == 'SG'
-    ]
-
-    if not sg_atoms:
+        help='Distance criterium (dist < 1.9 A)')
+ 
+    argp.add_argument(
+        'input_pdb',
+        help='PDB file')
+ 
+    opts = argp.parse_args()
+ 
+    struct_name = os.path.splitext(os.path.basename(opts.input_pdb))[0]
+ 
+    reader = PDBParser(PERMISSIVE=1, QUIET=True)
+    structure = reader.get_structure(struct_name, opts.input_pdb)
+ 
+    sg_list = [a for a in structure.get_atoms()
+        if a.get_parent().get_resname() == 'CYS' and a.get_name() == 'SG']
+ 
+    if not sg_list:
         print("No Cys SG atoms found in structure.")
         return
-
-    nbsearch = NeighborSearch(sg_atoms)
-
-    ssbonds = []
-    for at1, at2 in nbsearch.search_all(args.cutoff):
-        res1 = at1.get_parent()
-        res2 = at2.get_parent()
-
-        # A disulphide bond only makes sense between different Cys residues
-        if res1 is res2:
+ 
+    searcher = NeighborSearch(sg_list)
+ 
+    bridges = []
+    for a1, a2 in searcher.search_all(opts.cutoff):
+        r1 = a1.get_parent()
+        r2 = a2.get_parent()
+ 
+        if r1 is r2:
             continue
-
-        dist = at1 - at2
-        ssbonds.append((res1, at1, res2, at2, dist))
-
-    # Sort by residue number / chain of the first atom involved
-    ssbonds.sort(key=lambda h: (h[0].get_parent().id, h[0].id[1], h[2].get_parent().id, h[2].id[1]))
-
-    print(f"Possible disulphide bonds (Cys SG-SG distance < {args.cutoff} A)")
+ 
+        d = a1 - a2
+        bridges.append((r1, a1, r2, a2, d))
+ 
+    bridges.sort(key=lambda h: (h[0].get_parent().id, h[0].id[1], h[2].get_parent().id, h[2].id[1]))
+ 
+    print(f"Possible disulphide bonds (Cys SG-SG distance < {opts.cutoff} A)")
     print("-" * 70)
-    for res1, at1, res2, at2, dist in ssbonds:
-        print(f"{residue_id(res1):>12}.{at1.get_name():<4} -- "
-              f"{residue_id(res2):<12}.{at2.get_name():<4}  {dist:6.2f} A")
-
-    print(f"\nTotal possible disulphide bonds found: {len(ssbonds)}")
-
-
+    for r1, a1, r2, a2, d in bridges:
+        print(f"{get_label(r1):>12}.{a1.get_name():<4} -- "
+              f"{get_label(r2):<12}.{a2.get_name():<4}  {d:6.2f} A")
+ 
+    print(f"\nTotal possible disulphide bonds found: {len(bridges)}")
+ 
+ 
 if __name__ == '__main__':
     main()

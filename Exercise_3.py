@@ -3,10 +3,8 @@
 
 #!/usr/bin/env python
 
-""" Exercise 3
-Determine all possible hydrogen bonds (Polar atoms at less than 3.5 A).
-Parameters: PDB file name. Optional: cut-off distance (defaults to 3.5)
-
+# Exercise 3
+"""
 Usage (from terminal):
     python Exercise_3.py structure.pdb
     python Exercise_3.py structure.pdb --cutoff 3.2
@@ -18,23 +16,22 @@ import os
 from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.NeighborSearch import NeighborSearch
 
-polar_elem = ('O', 'N', 'S')
+polar_atoms = ('O', 'N', 'S')
 
-
-def residue_id(res):
-    chain_id = res.get_parent().id
-    resnum = res.id[1]
-    icode = res.id[2].strip()
-    return f"{res.get_resname()} {chain_id}{resnum}{icode}"
+def get_label(residue):
+    seg = residue.get_parent().id
+    num = residue.id[1]
+    ins = residue.id[2].strip()
+    return f"{residue.get_resname()} {seg}{num}{ins}"
 
 
 def main():
-    parser = argparse.ArgumentParser(
+    argp = argparse.ArgumentParser(
         prog='Exercise_3',
         description='List possible hydrogen bonds between polar atoms'
     )
 
-    parser.add_argument(
+    argp.add_argument(
         '--cutoff',
         dest='cutoff',
         type=float,
@@ -42,43 +39,40 @@ def main():
         help='Distance criterium (dist < 3.5 Å)'
     )
 
-    parser.add_argument(
-        'pdb_file',
-        help='PDB file' # 1UBQ.pdb or 4HHB.pdb
+    argp.add_argument(
+        'input_pdb',
+        help='PDB file'
     )
 
-    args = parser.parse_args()
+    opts = argp.parse_args()
 
-    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
+    struct_name = os.path.splitext(os.path.basename(opts.input_pdb))[0]
 
-    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
-    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
+    reader = PDBParser(PERMISSIVE=1, QUIET=True)
+    structure = reader.get_structure(struct_name, opts.input_pdb)
 
-    # Select only polar atoms (O, N, S)
-    polar_atoms = [at for at in st.get_atoms() if at.element in polar_elem]
+    polar_list = [a for a in structure.get_atoms() if a.element in polar_atoms]
 
-    nbsearch = NeighborSearch(polar_atoms)
+    searcher = NeighborSearch(polar_list)
 
-    hbonds = []
-    for at1, at2 in nbsearch.search_all(args.cutoff):
-        res1 = at1.get_parent()
-        res2 = at2.get_parent()
-        # Hydrogen bonds only make sense between atoms of different residues
-        if res1 is res2:
+    bonds = []
+    for a1, a2 in searcher.search_all(opts.cutoff):
+        r1 = a1.get_parent()
+        r2 = a2.get_parent()
+        if r1 is r2:
             continue
-        dist = at1 - at2
-        hbonds.append((res1, at1, res2, at2, dist))
+        d = a1 - a2
+        bonds.append((r1, a1, r2, a2, d))
 
-    # Sort by residue number / chain of the first atom involved
-    hbonds.sort(key=lambda h: (h[0].get_parent().id, h[0].id[1], h[2].get_parent().id, h[2].id[1]))
+    bonds.sort(key=lambda h: (h[0].get_parent().id, h[0].id[1], h[2].get_parent().id, h[2].id[1]))
 
-    print(f"Possible hydrogen bonds (polar atom-atom distance < {args.cutoff} A)")
+    print(f"Possible hydrogen bonds (polar atom-atom distance < {opts.cutoff} A)")
     print("-" * 70)
-    for res1, at1, res2, at2, dist in hbonds:
-        print(f"{residue_id(res1):>12}.{at1.get_name():<4} -- "
-              f"{residue_id(res2):<12}.{at2.get_name():<4}  {dist:6.2f} A")
+    for r1, a1, r2, a2, d in bonds:
+        print(f"{get_label(r1):>12}.{a1.get_name():<4} -- "
+              f"{get_label(r2):<12}.{a2.get_name():<4}  {d:6.2f} A")
 
-    print(f"\nTotal possible hydrogen bonds found: {len(hbonds)}")
+    print(f"\nTotal possible hydrogen bonds found: {len(bonds)}")
 
 
 if __name__ == '__main__':

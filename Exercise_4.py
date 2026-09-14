@@ -2,13 +2,9 @@
 # Alicia Mañas, Lídia Sanchez and Paula Artiz
 
 #!/usr/bin/env python
-#
-""" Exercise 4
-Generate a list of all CA atoms of given residue type with coordinates.
 
-Parameters: PDB file name, residue type.
-Optional: accept residue codes in one- or three-letter formats automatically
-
+# Exercise 4
+"""
 Usage (from terminal):
     python Exercise_4.py structure.pdb ARG
     python Exercise_4.py structure.pdb R
@@ -20,26 +16,23 @@ import sys
 
 from Bio.PDB.PDBParser import PDBParser
 
-# Standard 20 amino acids: three-letter <-> one-letter code
-THREE_TO_ONE = {
+AA3_TO_AA1 = {
     'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C',
     'GLN': 'Q', 'GLU': 'E', 'GLY': 'G', 'HIS': 'H', 'ILE': 'I',
     'LEU': 'L', 'LYS': 'K', 'MET': 'M', 'PHE': 'F', 'PRO': 'P',
     'SER': 'S', 'THR': 'T', 'TRP': 'W', 'TYR': 'Y', 'VAL': 'V',
 }
-ONE_TO_THREE = {one: three for three, one in THREE_TO_ONE.items()}
+AA1_TO_AA3 = {one: three for three, one in AA3_TO_AA1.items()}
 
 
-def normalize_resname(code):
-    """Accept either a one-letter or a three-letter residue code and
-    return the three-letter code used in PDB files."""
+def to_three_letter(code):
     code = code.strip().upper()
     if len(code) == 1:
-        if code not in ONE_TO_THREE:
+        if code not in AA1_TO_AA3:
             sys.exit(f"Unknown one-letter residue code: {code}")
-        return ONE_TO_THREE[code]
+        return AA1_TO_AA3[code]
     elif len(code) == 3:
-        if code not in THREE_TO_ONE:
+        if code not in AA3_TO_AA1:
             sys.exit(f"Unknown three-letter residue code: {code}")
         return code
     else:
@@ -47,48 +40,44 @@ def normalize_resname(code):
 
 
 def main():
-    parser = argparse.ArgumentParser(
+    argp = argparse.ArgumentParser(
         prog='Exercise_4',
-        description='List all CA atoms (with coordinates) of a given residue type'
-    )
+        description='List all CA atoms (with coordinates) of a given residue type')
 
-    parser.add_argument(
-        'pdb_file',
-        help='Input PDB file'
-    )
+    argp.add_argument(
+        'input_pdb',
+        help='Input PDB file')
 
-    parser.add_argument(
-        'restype',
-        help='Residue type, either one-letter (e.g. R) or three-letter (e.g. ARG) code'
-    )
+    argp.add_argument(
+        'res_type',
+        help='Residue type, either one-letter (e.g. R) or three-letter (e.g. ARG) code')
 
-    args = parser.parse_args()
+    opts = argp.parse_args()
 
-    resname = normalize_resname(args.restype)
+    target_resname = to_three_letter(opts.res_type)
 
-    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
+    struct_name = os.path.splitext(os.path.basename(opts.input_pdb))[0]
 
-    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
-    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
+    reader = PDBParser(PERMISSIVE=1, QUIET=True)
+    structure = reader.get_structure(struct_name, opts.input_pdb)
 
-    selected = []
-    for at in st.get_atoms():
-        if at.id == 'CA' and at.get_parent().get_resname() == resname:
-            selected.append(at)
+    matches = []
+    for a in structure.get_atoms():
+        if a.id == 'CA' and a.get_parent().get_resname() == target_resname:
+            matches.append(a)
 
-    # Sort by chain, then residue number
-    selected.sort(key=lambda at: (at.get_parent().get_parent().id, at.get_parent().id[1]))
+    matches.sort(key=lambda a: (a.get_parent().get_parent().id, a.get_parent().id[1]))
 
-    print(f"CA atoms of residue type {resname} ({THREE_TO_ONE[resname]})")
+    print(f"CA atoms of residue type {target_resname} ({AA3_TO_AA1[target_resname]})")
     print("-" * 60)
     print(f"{'Chain':<6}{'ResNum':<8}{'X':>10}{'Y':>10}{'Z':>10}")
-    for at in selected:
-        res = at.get_parent()
-        chain_id = res.get_parent().id
-        x, y, z = at.get_coord()
-        print(f"{chain_id:<6}{res.id[1]:<8}{x:>10.3f}{y:>10.3f}{z:>10.3f}")
+    for a in matches:
+        res = a.get_parent()
+        seg_id = res.get_parent().id
+        x, y, z = a.get_coord()
+        print(f"{seg_id:<6}{res.id[1]:<8}{x:>10.3f}{y:>10.3f}{z:>10.3f}")
 
-    print(f"\nTotal {resname} residues found: {len(selected)}")
+    print(f"\nTotal {target_resname} residues found: {len(matches)}")
 
 
 if __name__ == '__main__':

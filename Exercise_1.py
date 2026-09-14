@@ -1,12 +1,10 @@
 # Practical 1 - PDB
 # Alicia Mañas, Lídia Sanchez and Paula Artiz
 
-""" Exercise 1
-Determine the list of pairs of residues whose CA atoms are closer than a
-given distance.
+#!/usr/bin/env python
 
-Parameters: PDB file name, distance.
-
+# Exercise 1
+"""
 Usage (from terminal):
     python Exercise_1.py structure.pdb 5.0
     python Exercise_1.py --dist 5.0 structure.pdb
@@ -19,65 +17,57 @@ from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.NeighborSearch import NeighborSearch
 
 
-def residue_id(res):
-    """Return a readable identifier for a residue: RESNAME ChainId ResNum"""
-    chain_id = res.get_parent().id
-    resnum = res.id[1]
-    icode = res.id[2].strip()
-    return f"{res.get_resname()} {chain_id}{resnum}{icode}"
+def get_label(residue):
+    seg = residue.get_parent().id
+    num = residue.id[1]
+    ins = residue.id[2].strip()
+    return f"{residue.get_resname()} {seg}{num}{ins}"
 
 
 def main():
-    parser = argparse.ArgumentParser(
+    argp = argparse.ArgumentParser(
         prog='Exercise_1',
-        description='List pairs of residues whose CA atoms are closer than a given distance'
-    )
+        description='List pairs of residues whose CA atoms are closer than a given distance')
 
-    parser.add_argument(
+    argp.add_argument(
         '--dist',
-        dest='dist',
+        dest='cutoff',
         type=float,
         default=5.0,
-        help='Distance threshold in Angstroms (default: 5.0)'
-    )
+        help='Distance threshold in Angstroms (default: 5.0)')
 
-    parser.add_argument(
-        'pdb_file',
-        help='Input PDB file'
-    )
+    argp.add_argument(
+        'input_pdb',
+        help='Input PDB file')
 
-    args = parser.parse_args()
+    opts = argp.parse_args()
 
-    pdb_id = os.path.splitext(os.path.basename(args.pdb_file))[0]
+    struct_name = os.path.splitext(os.path.basename(opts.input_pdb))[0]
 
-    pdb_parser = PDBParser(PERMISSIVE=1, QUIET=True)
-    st = pdb_parser.get_structure(pdb_id, args.pdb_file)
+    reader = PDBParser(PERMISSIVE=1, QUIET=True)
+    structure = reader.get_structure(struct_name, opts.input_pdb)
 
-    # Select only CA atoms
-    ca_atoms = [at for at in st.get_atoms() if at.id == 'CA']
+    ca_list = [a for a in structure.get_atoms() if a.id == 'CA']
 
-    nbsearch = NeighborSearch(ca_atoms)
+    searcher = NeighborSearch(ca_list)
 
-    pairs = []
-    for at1, at2 in nbsearch.search_all(args.dist):
-        res1 = at1.get_parent()
-        res2 = at2.get_parent()
-        # Skip pairs that are the same residue (should not happen for CA-CA
-        # but kept as a safety check) and avoid trivial neighbor pairs
-        if res1 is res2:
+    found = []
+    for a1, a2 in searcher.search_all(opts.cutoff):
+        r1 = a1.get_parent()
+        r2 = a2.get_parent()
+        if r1 is r2:
             continue
-        dist = at1 - at2
-        pairs.append((res1, res2, dist))
+        d = a1 - a2
+        found.append((r1, r2, d))
 
-    # Sort by residue number of the first residue, then the second
-    pairs.sort(key=lambda p: (p[0].get_parent().id, p[0].id[1], p[1].get_parent().id, p[1].id[1]))
+    found.sort(key=lambda p: (p[0].get_parent().id, p[0].id[1], p[1].get_parent().id, p[1].id[1]))
 
-    print(f"Pairs of residues with CA-CA distance < {args.dist} A")
+    print(f"Pairs of residues with CA-CA distance < {opts.cutoff} A")
     print("-" * 60)
-    for res1, res2, dist in pairs:
-        print(f"{residue_id(res1):>12} -- {residue_id(res2):<12}  {dist:6.2f} A")
+    for r1, r2, d in found:
+        print(f"{get_label(r1):>12} -- {get_label(r2):<12}  {d:6.2f} A")
 
-    print(f"\nTotal pairs found: {len(pairs)}")
+    print(f"\nTotal pairs found: {len(found)}")
 
 
 if __name__ == '__main__':
