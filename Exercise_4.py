@@ -63,7 +63,6 @@ for res in st.get_residues():
 matches.sort(key=lambda a: (a.get_parent().get_parent().id, a.get_parent().id[1]))
  
 print(f"CA atoms of residue type {target_resname} ({AA3_TO_AA1[target_resname]})")
-print("-" * 60)
 print(f"{'Chain':<6}{'ResNum':<8}{'X':>10}{'Y':>10}{'Z':>10}")
 for at in matches:
     res = at.get_parent()

@@ -8,7 +8,6 @@ Input: python Exercise_4.py 1UBQ.pdb ARG
 Output:
 
 CA atoms of residue type ARG (R)
-------------------------------------------------------------
 Chain ResNum           X         Y         Z
 A     42          31.200    30.329    22.780
 A     54          28.108    17.439    18.276
@@ -22,7 +21,6 @@ Input: python Exercise_4.py 4HHB.pdb ARG
 Output:
 
 CA atoms of residue type ARG (R)
-------------------------------------------------------------
 Chain ResNum           X         Y         Z
 A     31          25.494     6.477    29.930
 A     92           8.982    18.475    23.626
