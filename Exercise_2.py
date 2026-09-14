@@ -52,7 +52,6 @@ if not hits:
 for res in hits:
     chain_id = res.get_parent().id
     print(f"\nResidue: {res.get_resname()} {chain_id}{res.id[1]}")
-    print("-" * 50)
     print(f"{'Atom':<6}{'X':>10}{'Y':>10}{'Z':>10}")
     atom_list = sorted(res.get_atoms(), key=lambda a: a.get_serial_number())
     for atom in atom_list:
