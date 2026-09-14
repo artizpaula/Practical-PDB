@@ -4,7 +4,6 @@
 #!/usr/bin/env python
 
 # Exercise 1
-# Usage (from terminal): python Exercise_1.py structure.pdb 5.0
 
 import argparse
 from Bio.PDB.NeighborSearch import NeighborSearch
@@ -42,7 +41,6 @@ for at in st.get_atoms():
 nbsearch = NeighborSearch(select)
 
 print(f"Pairs of residues with CA atoms closer than {args.distance} A")
-print("-" * 60)
 
 # Searching for contacts under the given distance
 ncontact = 1
@@ -55,9 +53,9 @@ for at1, at2 in nbsearch.search_all(args.distance):
         continue
 
     print(f"Contact {ncontact}:")
-    print(f"  Res 1: {res1.get_resname()} {res1.get_parent().id}{res1.id[1]}"
+    print(f"  Residue 1: {res1.get_resname()} {res1.get_parent().id}{res1.id[1]}"
           f"  (CA serial {at1.get_serial_number()})")
-    print(f"  Res 2: {res2.get_resname()} {res2.get_parent().id}{res2.id[1]}"
+    print(f"  Residue 2: {res2.get_resname()} {res2.get_parent().id}{res2.id[1]}"
           f"  (CA serial {at2.get_serial_number()})")
     print(f"  Distance: {at1 - at2:.2f} A")
     print()

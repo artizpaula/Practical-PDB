@@ -2,3 +2,789 @@ Practical 1 - PDB
 Alicia Mañas, Lídia Sanchez and Paula Artiz
 
 Exercise 3 - Inputs and outputs
+
+# 1. Structure: 1UBQ
+Input: python Exercise_3.py 4HHB.pdb --cutoff 3.0 (another option: python Exercise_3.py 1UBQ.pdb)
+Output:
+
+Possible hydrogen bonds (polar atom-atom distance < 3.0 A)
+Contact 1:
+  HOH A113.O -- HOH A130.O
+  Distance: 2.60 A
+
+Contact 2:
+  ILE A61.O -- GLN A62.N
+  Distance: 2.29 A
+
+Contact 3:
+  GLN A62.O -- LYS A63.N
+  Distance: 2.26 A
+
+Contact 4:
+  ILE A61.O -- HOH A81.O
+  Distance: 2.78 A
+
+Contact 5:
+  ASN A60.O -- ILE A61.N
+  Distance: 2.24 A
+
+Contact 6:
+  SER A20.O -- HOH A85.O
+  Distance: 2.91 A
+
+Contact 7:
+  SER A20.OG -- HOH A83.O
+  Distance: 2.68 A
+
+Contact 8:
+  SER A20.O -- ASP A21.N
+  Distance: 2.28 A
+
+Contact 9:
+  PRO A19.O -- SER A20.N
+  Distance: 2.23 A
+
+Contact 10:
+  SER A20.N -- ASP A21.N
+  Distance: 2.65 A
+
+Contact 11:
+  PRO A19.N -- SER A20.N
+  Distance: 2.71 A
+
+Contact 12:
+  VAL A17.O -- GLU A18.N
+  Distance: 2.29 A
+
+Contact 13:
+  MET A1.N -- VAL A17.O
+  Distance: 2.56 A
+
+Contact 14:
+  MET A1.N -- HOH A110.O
+  Distance: 2.37 A
+
+Contact 15:
+  GLU A18.O -- SER A20.N
+  Distance: 2.93 A
+
+Contact 16:
+  GLU A18.O -- ASP A21.N
+  Distance: 2.79 A
+
+Contact 17:
+  GLU A18.OE1 -- HOH A98.O
+  Distance: 2.50 A
+
+Contact 18:
+  GLU A18.O -- PRO A19.N
+  Distance: 2.22 A
+
+Contact 19:
+  PRO A19.O -- SER A57.N
+  Distance: 2.84 A
+
+Contact 20:
+  HOH A97.O -- HOH A98.O
+  Distance: 2.58 A
+
+Contact 21:
+  SER A57.O -- ASP A58.N
+  Distance: 2.27 A
+
+Contact 22:
+  ASP A58.N -- TYR A59.N
+  Distance: 2.76 A
+
+Contact 23:
+  SER A57.O -- ASN A60.N
+  Distance: 2.88 A
+
+Contact 24:
+  ASP A58.O -- TYR A59.N
+  Distance: 2.22 A
+
+Contact 25:
+  TYR A59.N -- ASN A60.N
+  Distance: 2.78 A
+
+Contact 26:
+  TYR A59.O -- HOH A100.O
+  Distance: 2.94 A
+
+Contact 27:
+  TYR A59.O -- ASN A60.N
+  Distance: 2.23 A
+
+Contact 28:
+  ARG A54.O -- THR A55.N
+  Distance: 2.25 A
+
+Contact 29:
+  ASP A21.O -- LEU A56.N
+  Distance: 2.98 A
+
+Contact 30:
+  LEU A50.O -- GLU A51.N
+  Distance: 2.26 A
+
+Contact 31:
+  THR A55.O -- LEU A56.N
+  Distance: 2.25 A
+
+Contact 32:
+  GLU A51.OE2 -- HOH A111.O
+  Distance: 2.72 A
+
+Contact 33:
+  GLU A51.N -- TYR A59.OH
+  Distance: 2.96 A
+
+Contact 34:
+  GLN A49.O -- LEU A50.N
+  Distance: 2.26 A
+
+Contact 35:
+  SER A57.OG -- HOH A95.O
+  Distance: 2.67 A
+
+Contact 36:
+  SER A57.N -- ASP A58.N
+  Distance: 2.76 A
+
+Contact 37:
+  ASN A60.N -- ILE A61.N
+  Distance: 2.84 A
+
+Contact 38:
+  LEU A56.O -- SER A57.N
+  Distance: 2.25 A
+
+Contact 39:
+  THR A55.OG1 -- SER A57.OG
+  Distance: 2.96 A
+
+Contact 40:
+  LEU A56.N -- SER A57.N
+  Distance: 2.73 A
+
+Contact 41:
+  SER A65.OG -- HOH A101.O
+  Distance: 2.65 A
+
+Contact 42:
+  GLU A64.OE2 -- HOH A86.O
+  Distance: 3.00 A
+
+Contact 43:
+  LYS A63.O -- GLU A64.N
+  Distance: 2.26 A
+
+Contact 44:
+  GLU A64.N -- SER A65.N
+  Distance: 2.76 A
+
+Contact 45:
+  SER A65.O -- THR A66.N
+  Distance: 2.22 A
+
+Contact 46:
+  THR A66.O -- HOH A84.O
+  Distance: 2.79 A
+
+Contact 47:
+  GLU A64.O -- SER A65.N
+  Distance: 2.26 A
+
+Contact 48:
+  GLN A2.O -- ILE A3.N
+  Distance: 2.26 A
+
+Contact 49:
+  ILE A3.O -- PHE A4.N
+  Distance: 2.30 A
+
+Contact 50:
+  PHE A4.O -- LEU A67.N
+  Distance: 2.82 A
+
+Contact 51:
+  LYS A6.N -- LEU A67.O
+  Distance: 2.90 A
+
+Contact 52:
+  VAL A5.N -- ILE A13.O
+  Distance: 2.79 A
+
+Contact 53:
+  VAL A5.O -- LYS A6.N
+  Distance: 2.28 A
+
+Contact 54:
+  PHE A4.O -- VAL A5.N
+  Distance: 2.26 A
+
+Contact 55:
+  GLN A2.O -- GLU A64.N
+  Distance: 2.78 A
+
+Contact 56:
+  THR A66.O -- LEU A67.N
+  Distance: 2.29 A
+
+Contact 57:
+  PHE A4.N -- SER A65.O
+  Distance: 2.86 A
+
+Contact 58:
+  THR A12.OG1 -- HOH A91.O
+  Distance: 2.83 A
+
+Contact 59:
+  PHE A45.O -- LYS A48.N
+  Distance: 2.84 A
+
+Contact 60:
+  PHE A45.O -- ALA A46.N
+  Distance: 2.26 A
+
+Contact 61:
+  GLY A47.O -- LYS A48.N
+  Distance: 2.24 A
+
+Contact 62:
+  GLY A47.N -- LYS A48.N
+  Distance: 2.82 A
+
+Contact 63:
+  ALA A46.O -- GLY A47.N
+  Distance: 2.24 A
+
+Contact 64:
+  ALA A46.N -- GLY A47.N
+  Distance: 2.77 A
+
+Contact 65:
+  ILE A44.O -- HIS A68.N
+  Distance: 2.79 A
+
+Contact 66:
+  ILE A44.O -- PHE A45.N
+  Distance: 2.26 A
+
+Contact 67:
+  ALA A46.N -- HOH A78.O
+  Distance: 2.99 A
+
+Contact 68:
+  GLY A47.N -- HOH A103.O
+  Distance: 2.83 A
+
+Contact 69:
+  ARG A42.NE -- GLN A49.NE2
+  Distance: 2.75 A
+
+Contact 70:
+  ARG A42.O -- LEU A43.N
+  Distance: 2.32 A
+
+Contact 71:
+  HIS A68.O -- LEU A69.N
+  Distance: 2.26 A
+
+Contact 72:
+  LYS A6.O -- THR A7.N
+  Distance: 2.28 A
+
+Contact 73:
+  THR A7.O -- HOH A107.O
+  Distance: 2.72 A
+
+Contact 74:
+  LYS A6.O -- LEU A69.N
+  Distance: 2.93 A
+
+Contact 75:
+  LEU A43.O -- ILE A44.N
+  Distance: 2.28 A
+
+Contact 76:
+  ILE A44.N -- HIS A68.O
+  Distance: 2.79 A
+
+Contact 77:
+  HOH A78.O -- HOH A84.O
+  Distance: 2.56 A
+
+Contact 78:
+  LEU A67.O -- HIS A68.N
+  Distance: 2.27 A
+
+Contact 79:
+  GLN A62.O -- SER A65.OG
+  Distance: 2.51 A
+
+Contact 80:
+  MET A1.O -- GLN A2.N
+  Distance: 2.26 A
+
+Contact 81:
+  LYS A48.O -- GLN A49.N
+  Distance: 2.23 A
+
+Contact 82:
+  LEU A43.O -- LEU A50.N
+  Distance: 2.83 A
+
+Contact 83:
+  ASP A21.OD1 -- HOH A127.O
+  Distance: 2.71 A
+
+Contact 84:
+  VAL A26.N -- LYS A27.N
+  Distance: 2.78 A
+
+Contact 85:
+  GLU A16.O -- VAL A17.N
+  Distance: 2.29 A
+
+Contact 86:
+  GLU A16.N -- HOH A88.O
+  Distance: 2.97 A
+
+Contact 87:
+  HOH A99.O -- HOH A116.O
+  Distance: 2.88 A
+
+Contact 88:
+  ASP A21.OD2 -- HOH A99.O
+  Distance: 2.84 A
+
+Contact 89:
+  HOH A121.O -- HOH A128.O
+  Distance: 2.11 A
+
+Contact 90:
+  ALA A28.O -- LYS A29.N
+  Distance: 2.26 A
+
+Contact 91:
+  LYS A29.N -- ILE A30.N
+  Distance: 2.77 A
+
+Contact 92:
+  VAL A26.O -- ILE A30.N
+  Distance: 2.98 A
+
+Contact 93:
+  ALA A28.O -- ASP A32.N
+  Distance: 2.87 A
+
+Contact 94:
+  LYS A29.O -- ILE A30.N
+  Distance: 2.26 A
+
+Contact 95:
+  ASN A25.O -- LYS A29.N
+  Distance: 2.93 A
+
+Contact 96:
+  ALA A28.N -- LYS A29.N
+  Distance: 2.82 A
+
+Contact 97:
+  LYS A27.O -- ALA A28.N
+  Distance: 2.26 A
+
+Contact 98:
+  ALA A28.O -- HOH A94.O
+  Distance: 2.93 A
+
+Contact 99:
+  ASN A25.N -- VAL A26.N
+  Distance: 2.79 A
+
+Contact 100:
+  ASN A25.O -- VAL A26.N
+  Distance: 2.28 A
+
+Contact 101:
+  GLU A16.O -- LYS A29.NZ
+  Distance: 2.68 A
+
+Contact 102:
+  LYS A27.N -- ALA A28.N
+  Distance: 2.79 A
+
+Contact 103:
+  VAL A26.O -- LYS A27.N
+  Distance: 2.25 A
+
+Contact 104:
+  GLY A53.O -- HOH A118.O
+  Distance: 2.96 A
+
+Contact 105:
+  GLY A53.N -- HOH A125.O
+  Distance: 2.77 A
+
+Contact 106:
+  ASP A52.O -- GLY A53.N
+  Distance: 2.27 A
+
+Contact 107:
+  GLU A24.N -- ASP A52.O
+  Distance: 2.91 A
+
+Contact 108:
+  ILE A23.N -- GLU A24.N
+  Distance: 2.75 A
+
+Contact 109:
+  LYS A27.NZ -- ASP A52.OD2
+  Distance: 2.90 A
+
+Contact 110:
+  ILE A23.O -- GLU A24.N
+  Distance: 2.23 A
+
+Contact 111:
+  PRO A38.O -- HOH A96.O
+  Distance: 2.83 A
+
+Contact 112:
+  PRO A38.N -- ASP A39.N
+  Distance: 2.80 A
+
+Contact 113:
+  ASP A39.N -- HOH A80.O
+  Distance: 2.82 A
+
+Contact 114:
+  PRO A38.O -- ASP A39.N
+  Distance: 2.23 A
+
+Contact 115:
+  ASP A52.OD1 -- HOH A108.O
+  Distance: 2.52 A
+
+Contact 116:
+  LYS A27.NZ -- HOH A96.O
+  Distance: 2.58 A
+
+Contact 117:
+  THR A22.O -- ILE A23.N
+  Distance: 2.30 A
+
+Contact 118:
+  ILE A23.O -- LYS A27.N
+  Distance: 3.00 A
+
+Contact 119:
+  GLU A24.N -- ASN A25.N
+  Distance: 2.79 A
+
+Contact 120:
+  GLU A24.O -- ASN A25.N
+  Distance: 2.26 A
+
+Contact 121:
+  THR A14.O -- LEU A15.N
+  Distance: 2.25 A
+
+Contact 122:
+  THR A12.O -- ILE A13.N
+  Distance: 2.30 A
+
+Contact 123:
+  THR A12.N -- HOH A90.O
+  Distance: 2.99 A
+
+Contact 124:
+  HOH A114.O -- HOH A122.O
+  Distance: 2.15 A
+
+Contact 125:
+  THR A12.O -- HOH A131.O
+  Distance: 2.60 A
+
+Contact 126:
+  LYS A11.O -- THR A12.N
+  Distance: 2.28 A
+
+Contact 127:
+  LYS A11.NZ -- HOH A131.O
+  Distance: 2.98 A
+
+Contact 128:
+  ILE A30.O -- GLN A31.N
+  Distance: 2.24 A
+
+Contact 129:
+  ASP A32.O -- LYS A33.N
+  Distance: 2.25 A
+
+Contact 130:
+  GLU A34.N -- GLY A35.N
+  Distance: 2.72 A
+
+Contact 131:
+  LYS A33.O -- GLU A34.N
+  Distance: 2.24 A
+
+Contact 132:
+  GLU A34.O -- GLY A35.N
+  Distance: 2.25 A
+
+Contact 133:
+  GLU A34.O -- HOH A117.O
+  Distance: 2.65 A
+
+Contact 134:
+  LYS A33.N -- GLU A34.N
+  Distance: 2.93 A
+
+Contact 135:
+  GLN A31.O -- GLY A35.N
+  Distance: 2.74 A
+
+Contact 136:
+  ILE A30.O -- GLU A34.N
+  Distance: 2.91 A
+
+Contact 137:
+  GLY A35.N -- ILE A36.N
+  Distance: 2.80 A
+
+Contact 138:
+  GLN A40.N -- GLN A41.N
+  Distance: 2.73 A
+
+Contact 139:
+  GLN A40.O -- GLN A41.N
+  Distance: 2.23 A
+
+Contact 140:
+  ARG A42.N -- VAL A70.O
+  Distance: 2.82 A
+
+Contact 141:
+  GLN A40.O -- ARG A72.N
+  Distance: 2.72 A
+
+Contact 142:
+  LEU A8.N -- HOH A79.O
+  Distance: 2.71 A
+
+Contact 143:
+  LEU A8.N -- THR A9.N
+  Distance: 2.72 A
+
+Contact 144:
+  ARG A72.O -- LEU A73.N
+  Distance: 2.28 A
+
+Contact 145:
+  VAL A70.O -- LEU A71.N
+  Distance: 2.26 A
+
+Contact 146:
+  LEU A71.O -- ARG A72.N
+  Distance: 2.20 A
+
+Contact 147:
+  ILE A36.O -- PRO A37.N
+  Distance: 2.25 A
+
+Contact 148:
+  GLY A35.O -- HOH A105.O
+  Distance: 2.47 A
+
+Contact 149:
+  ARG A74.O -- GLY A75.N
+  Distance: 2.28 A
+
+Contact 150:
+  GLY A75.O -- GLY A76.N
+  Distance: 2.26 A
+
+Contact 151:
+  GLY A75.O -- HOH A120.O
+  Distance: 2.93 A
+
+Contact 152:
+  PRO A37.O -- GLN A40.N
+  Distance: 2.96 A
+
+Contact 153:
+  ILE A36.O -- GLN A41.NE2
+  Distance: 2.97 A
+
+Contact 154:
+  LEU A73.O -- ARG A74.N
+  Distance: 2.28 A
+
+Contact 155:
+  GLY A35.O -- ILE A36.N
+  Distance: 2.28 A
+
+Contact 156:
+  LYS A27.O -- GLN A31.N
+  Distance: 2.93 A
+
+Contact 157:
+  ILE A30.N -- GLN A31.N
+  Distance: 2.74 A
+
+Contact 158:
+  GLN A31.N -- ASP A32.N
+  Distance: 2.78 A
+
+Contact 159:
+  LYS A29.O -- LYS A33.N
+  Distance: 2.91 A
+
+Contact 160:
+  ASP A32.N -- LYS A33.N
+  Distance: 2.84 A
+
+Contact 161:
+  GLN A31.O -- ASP A32.N
+  Distance: 2.23 A
+
+Contact 162:
+  GLN A41.O -- ARG A42.N
+  Distance: 2.22 A
+
+Contact 163:
+  ASP A39.N -- GLN A40.N
+  Distance: 2.71 A
+
+Contact 164:
+  ASP A39.O -- GLN A40.N
+  Distance: 2.25 A
+
+Contact 165:
+  PRO A37.O -- PRO A38.N
+  Distance: 2.26 A
+
+Contact 166:
+  SER A20.OG -- HOH A127.O
+  Distance: 2.92 A
+
+Contact 167:
+  MET A1.O -- VAL A17.N
+  Distance: 2.85 A
+
+Contact 168:
+  ASP A21.O -- THR A22.N
+  Distance: 2.26 A
+
+Contact 169:
+  GLY A53.O -- ARG A54.N
+  Distance: 2.23 A
+
+Contact 170:
+  GLY A53.N -- ARG A54.N
+  Distance: 2.80 A
+
+Contact 171:
+  ILE A23.N -- ARG A54.O
+  Distance: 2.86 A
+
+Contact 172:
+  GLU A51.O -- ASP A52.N
+  Distance: 2.21 A
+
+Contact 173:
+  LEU A50.O -- HOH A104.O
+  Distance: 2.76 A
+
+Contact 174:
+  LEU A15.O -- GLU A16.N
+  Distance: 2.29 A
+
+Contact 175:
+  LEU A43.N -- HOH A104.O
+  Distance: 2.90 A
+
+Contact 176:
+  ILE A13.O -- THR A14.N
+  Distance: 2.24 A
+
+Contact 177:
+  VAL A5.O -- ILE A13.N
+  Distance: 2.72 A
+
+Contact 178:
+  GLY A10.O -- LYS A11.N
+  Distance: 2.25 A
+
+Contact 179:
+  THR A7.N -- LYS A11.O
+  Distance: 2.91 A
+
+Contact 180:
+  GLY A10.N -- LYS A11.N
+  Distance: 2.74 A
+
+Contact 181:
+  THR A9.O -- GLY A10.N
+  Distance: 2.20 A
+
+Contact 182:
+  ARG A42.O -- VAL A70.N
+  Distance: 2.81 A
+
+Contact 183:
+  LEU A69.O -- VAL A70.N
+  Distance: 2.26 A
+
+Contact 184:
+  LEU A69.O -- HOH A79.O
+  Distance: 2.83 A
+
+Contact 185:
+  THR A7.O -- LEU A8.N
+  Distance: 2.25 A
+
+Contact 186:
+  LEU A8.O -- THR A9.N
+  Distance: 2.28 A
+
+Contact 187:
+  THR A9.N -- GLY A10.N
+  Distance: 2.70 A
+
+Total possible hydrogen bonds found: 187
+
+# 2. Structure: 4HHB
+Input: python Exercise_3.py 4HHB.pdb --cutoff 2.0 (another option: python Exercise_3.py 4HHB.pdb)
+Output:
+
+Possible hydrogen bonds (polar atom-atom distance < 2.0 A)
+Contact 1:
+  TRP C14.O -- GLY C15.N
+  Distance: 1.93 A
+
+Contact 2:
+  ASP B79.O -- ASN B80.N
+  Distance: 1.97 A
+
+Contact 3:
+  PHE B71.O -- SER B72.N
+  Distance: 1.98 A
+
+Contact 4:
+  ASP A74.O -- ASP A75.N
+  Distance: 1.94 A
+
+Contact 5:
+  SER B44.O -- PHE B45.N
+  Distance: 1.99 A
+
+Contact 6:
+  GLY B56.O -- ASN B57.N
+  Distance: 1.98 A
+
+Total possible hydrogen bonds found: 6

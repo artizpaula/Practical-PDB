@@ -2,3 +2,11 @@ Practical 1 - PDB
 Alicia Mañas, Lídia Sanchez and Paula Artiz
 
 Exercise 8 - Inputs and outputs
+
+# 1. Structure: 1UBQ
+Input: 
+Output:
+
+# 2. Structure: 4HHB
+Input: 
+Output:

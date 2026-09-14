@@ -4,11 +4,6 @@
 #!/usr/bin/env python
 
 # Exercise 4
-"""
-Usage (from terminal):
-    python Exercise_4.py structure.pdb ARG
-    python Exercise_4.py structure.pdb R
-"""
 
 import argparse
  

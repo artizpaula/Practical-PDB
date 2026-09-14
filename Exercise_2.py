@@ -4,14 +4,8 @@
 #!/usr/bin/env python
 
 #Exercise 2
-"""
-Usage (from terminal):
-    python Exercise_2.py structure.pdb 35
-    python Exercise_2.py --chain A structure.pdb 35
-"""
 
 import argparse
-
 from Bio.PDB.PDBParser import PDBParser
 
 # argparse, following ex_cmd_line.py

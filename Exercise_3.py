@@ -4,14 +4,8 @@
 #!/usr/bin/env python
 
 # Exercise 3
-"""
-Usage (from terminal):
-    python Exercise_3.py structure.pdb
-    python Exercise_3.py structure.pdb --cutoff 3.2
-"""
 
 import argparse
-
 from Bio.PDB.NeighborSearch import NeighborSearch
 from Bio.PDB.PDBParser import PDBParser
 
@@ -50,7 +44,6 @@ for at in st.get_atoms():
 nbsearch = NeighborSearch(select)
 
 print(f"Possible hydrogen bonds (polar atom-atom distance < {args.cutoff} A)")
-print("-" * 70)
 
 ncontact = 1
 

@@ -2,3 +2,39 @@ Practical 1 - PDB
 Alicia Mañas, Lídia Sanchez and Paula Artiz
 
 Exercise 4 - Inputs and outputs
+
+# 1. Structure: 1UBQ
+Input: python Exercise_4.py 1UBQ.pdb ARG
+Output:
+
+CA atoms of residue type ARG (R)
+------------------------------------------------------------
+Chain ResNum           X         Y         Z
+A     42          31.200    30.329    22.780
+A     54          28.108    17.439    18.276
+A     72          35.161    34.174    26.896
+A     74          40.873    33.802    30.253
+
+Total ARG residues found: 4
+
+# 2. Structure: 4HHB
+Input: python Exercise_4.py 4HHB.pdb ARG
+Output:
+
+CA atoms of residue type ARG (R)
+------------------------------------------------------------
+Chain ResNum           X         Y         Z
+A     31          25.494     6.477    29.930
+A     92           8.982    18.475    23.626
+A     141          3.543    26.104    29.057
+B     30          28.338    14.277    50.006
+B     40          17.214    17.313    58.995
+B     104         17.161     7.494    45.912
+C     31          -6.127    13.392    50.254
+C     92          13.509    20.619    55.120
+C     141         20.604    25.087    48.416
+D     30          -6.952    17.711    29.330
+D     40           4.313    15.722    20.258
+D     104          1.865     8.837    34.858
+
+Total ARG residues found: 12
