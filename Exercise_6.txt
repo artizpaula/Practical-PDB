@@ -15,6 +15,8 @@ pdb_file  : 1ubq.pdb
 0 Cys SG atoms selected
 
 No Cys SG atoms found in structure.
+
+
 # 2. Structure: 4HHB
 Input: 
 Output:
@@ -24,26 +26,11 @@ Settings
 cutoff    : 2.5
 pdb_file  : 4hhb.pdb
 
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain A is discontinuous at line 5274.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain B is discontinuous at line 5317.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain C is discontinuous at line 5361.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain D is discontinuous at line 5404.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain A is discontinuous at line 5448.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain B is discontinuous at line 5504.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain C is discontinuous at line 5561.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain D is discontinuous at line 5620.
-  warnings.warn(
 6 Cys SG atoms selected
 
 NBSEARCH:
 Total disulphide bonds found: 0
+
 
 # 3. Structure : 4KU1
 Input: python Exercise_6.py 4ku1.pdb
@@ -53,12 +40,6 @@ Settings
 --------
 cutoff    : 2.5
 pdb_file  : 4ku1.pdb
-
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain A is discontinuous at line 4104.
-  warnings.warn(
-C:\Users\amany\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Bio\PDB\StructureBuilder.py:100: PDBConstructionWarning: WARNING: Chain B is discontinuous at line 4183.
-  warnings.warn(
-8 Cys SG atoms selected
 
 NBSEARCH:
 Contact: 1
