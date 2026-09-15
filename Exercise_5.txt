@@ -4,9 +4,1437 @@ Alicia Mañas, Lídia Sanchez and Paula Artiz
 Exercise 5 - Inputs and outputs
 
 # 1. Structure: 1UBQ
-Input: 
+Input: python Exercise_5.py 1ubq.pdb
 Output:
 
+Settings
+--------
+cutoff    : 2.5
+pdb_file  : 1ubq.pdb
+
+152 backbone C/N atoms selected
+
+NBSEARCH:
+Contact: 1
+at1: ASN A60.C, 469
+at2: ILE A61.N, 475
+dist: 1.32 A
+
+Contact: 2
+at1: ILE A61.C, 477
+at2: GLN A62.N, 483
+dist: 1.30 A
+
+Contact: 3
+at1: GLN A62.C, 485
+at2: LYS A63.N, 492
+dist: 1.33 A
+
+Contact: 4
+at1: LEU A56.C, 435
+at2: SER A57.N, 441
+dist: 1.35 A
+
+Contact: 5
+at1: GLU A18.C, 136
+at2: PRO A19.N, 143
+dist: 1.32 A
+
+Contact: 6
+at1: SER A20.C, 152
+at2: ASP A21.N, 156
+dist: 1.33 A
+
+Contact: 7
+at1: VAL A17.C, 129
+at2: GLU A18.N, 134
+dist: 1.31 A
+
+Contact: 8
+at1: MET A1.C, 3
+at2: GLN A2.N, 9
+dist: 1.30 A
+
+Contact: 9
+at1: PRO A19.C, 145
+at2: SER A20.N, 150
+dist: 1.32 A
+
+Contact: 10
+at1: TYR A59.C, 457
+at2: ASN A60.N, 467
+dist: 1.32 A
+
+Contact: 11
+at1: ASP A58.C, 449
+at2: TYR A59.N, 455
+dist: 1.30 A
+
+Contact: 12
+at1: SER A57.C, 443
+at2: ASP A58.N, 447
+dist: 1.32 A
+
+Contact: 13
+at1: LYS A48.C, 370
+at2: GLN A49.N, 377
+dist: 1.31 A
+
+Contact: 14
+at1: THR A55.C, 428
+at2: LEU A56.N, 433
+dist: 1.32 A
+
+Contact: 15
+at1: ARG A54.C, 417
+at2: THR A55.N, 426
+dist: 1.31 A
+
+Contact: 16
+at1: LEU A50.C, 388
+at2: GLU A51.N, 394
+dist: 1.33 A
+
+Contact: 17
+at1: GLN A49.C, 379
+at2: LEU A50.N, 386
+dist: 1.31 A
+
+Contact: 18
+at1: LYS A63.C, 494
+at2: GLU A64.N, 501
+dist: 1.34 A
+
+Contact: 19
+at1: GLU A64.C, 503
+at2: SER A65.N, 510
+dist: 1.32 A
+
+Contact: 20
+at1: SER A65.C, 512
+at2: THR A66.N, 516
+dist: 1.31 A
+
+Contact: 21
+at1: THR A66.C, 518
+at2: LEU A67.N, 523
+dist: 1.34 A
+
+Contact: 22
+at1: PHE A4.C, 28
+at2: VAL A5.N, 37
+dist: 1.33 A
+
+Contact: 23
+at1: VAL A5.C, 39
+at2: LYS A6.N, 44
+dist: 1.29 A
+
+Contact: 24
+at1: LYS A6.C, 46
+at2: THR A7.N, 53
+dist: 1.35 A
+
+Contact: 25
+at1: GLN A2.C, 11
+at2: ILE A3.N, 18
+dist: 1.32 A
+
+Contact: 26
+at1: ILE A3.C, 20
+at2: PHE A4.N, 26
+dist: 1.31 A
+
+Contact: 27
+at1: ALA A46.C, 361
+at2: GLY A47.N, 364
+dist: 1.30 A
+
+Contact: 28
+at1: PHE A45.C, 350
+at2: ALA A46.N, 359
+dist: 1.31 A
+
+Contact: 29
+at1: ILE A44.C, 342
+at2: PHE A45.N, 348
+dist: 1.36 A
+
+Contact: 30
+at1: LEU A67.C, 525
+at2: HIS A68.N, 531
+dist: 1.29 A
+
+Contact: 31
+at1: HIS A68.C, 533
+at2: LEU A69.N, 541
+dist: 1.32 A
+
+Contact: 32
+at1: LEU A69.C, 543
+at2: VAL A70.N, 549
+dist: 1.29 A
+
+Contact: 33
+at1: LEU A43.C, 334
+at2: ILE A44.N, 340
+dist: 1.33 A
+
+Contact: 34
+at1: GLY A47.C, 366
+at2: LYS A48.N, 368
+dist: 1.31 A
+
+Contact: 35
+at1: GLU A16.C, 120
+at2: VAL A17.N, 127
+dist: 1.32 A
+
+Contact: 36
+at1: ASP A21.C, 158
+at2: THR A22.N, 164
+dist: 1.32 A
+
+Contact: 37
+at1: LEU A15.C, 112
+at2: GLU A16.N, 118
+dist: 1.31 A
+
+Contact: 38
+at1: LYS A29.C, 219
+at2: ILE A30.N, 226
+dist: 1.33 A
+
+Contact: 39
+at1: ALA A28.C, 214
+at2: LYS A29.N, 217
+dist: 1.32 A
+
+Contact: 40
+at1: GLN A31.C, 236
+at2: ASP A32.N, 243
+dist: 1.31 A
+
+Contact: 41
+at1: ASN A25.C, 190
+at2: VAL A26.N, 196
+dist: 1.33 A
+
+Contact: 42
+at1: ASP A52.C, 405
+at2: GLY A53.N, 411
+dist: 1.31 A
+
+Contact: 43
+at1: ILE A23.C, 173
+at2: GLU A24.N, 179
+dist: 1.31 A
+
+Contact: 44
+at1: ASP A39.C, 297
+at2: GLN A40.N, 303
+dist: 1.32 A
+
+Contact: 45
+at1: PRO A38.C, 290
+at2: ASP A39.N, 295
+dist: 1.31 A
+
+Contact: 46
+at1: PRO A37.C, 283
+at2: PRO A38.N, 288
+dist: 1.31 A
+
+Contact: 47
+at1: THR A22.C, 166
+at2: ILE A23.N, 171
+dist: 1.33 A
+
+Contact: 48
+at1: VAL A26.C, 198
+at2: LYS A27.N, 203
+dist: 1.33 A
+
+Contact: 49
+at1: GLU A24.C, 181
+at2: ASN A25.N, 188
+dist: 1.32 A
+
+Contact: 50
+at1: LYS A27.C, 205
+at2: ALA A28.N, 212
+dist: 1.32 A
+
+Contact: 51
+at1: LYS A11.C, 81
+at2: THR A12.N, 88
+dist: 1.32 A
+
+Contact: 52
+at1: THR A12.C, 90
+at2: ILE A13.N, 95
+dist: 1.33 A
+
+Contact: 53
+at1: THR A14.C, 105
+at2: LEU A15.N, 110
+dist: 1.32 A
+
+Contact: 54
+at1: ILE A13.C, 97
+at2: THR A14.N, 103
+dist: 1.31 A
+
+Contact: 55
+at1: LYS A33.C, 253
+at2: GLU A34.N, 260
+dist: 1.30 A
+
+Contact: 56
+at1: ASP A32.C, 245
+at2: LYS A33.N, 251
+dist: 1.35 A
+
+Contact: 57
+at1: GLY A35.C, 271
+at2: ILE A36.N, 273
+dist: 1.34 A
+
+Contact: 58
+at1: GLU A34.C, 262
+at2: GLY A35.N, 269
+dist: 1.32 A
+
+Contact: 59
+at1: VAL A70.C, 551
+at2: LEU A71.N, 556
+dist: 1.31 A
+
+Contact: 60
+at1: LEU A71.C, 558
+at2: ARG A72.N, 564
+dist: 1.28 A
+
+Contact: 61
+at1: ARG A72.C, 566
+at2: LEU A73.N, 575
+dist: 1.29 A
+
+Contact: 62
+at1: LEU A73.C, 577
+at2: ARG A74.N, 583
+dist: 1.32 A
+
+Contact: 63
+at1: ILE A36.C, 275
+at2: PRO A37.N, 281
+dist: 1.33 A
+
+Contact: 64
+at1: GLY A75.C, 596
+at2: GLY A76.N, 598
+dist: 1.32 A
+
+Contact: 65
+at1: ARG A74.C, 585
+at2: GLY A75.N, 594
+dist: 1.33 A
+
+Contact: 66
+at1: ILE A30.C, 228
+at2: GLN A31.N, 234
+dist: 1.31 A
+
+Contact: 67
+at1: GLN A41.C, 314
+at2: ARG A42.N, 321
+dist: 1.33 A
+
+Contact: 68
+at1: GLN A40.C, 305
+at2: GLN A41.N, 312
+dist: 1.31 A
+
+Contact: 69
+at1: GLY A53.C, 413
+at2: ARG A54.N, 415
+dist: 1.33 A
+
+Contact: 70
+at1: GLU A51.C, 396
+at2: ASP A52.N, 403
+dist: 1.31 A
+
+Contact: 71
+at1: ARG A42.C, 323
+at2: LEU A43.N, 332
+dist: 1.33 A
+
+Contact: 72
+at1: GLY A10.C, 77
+at2: LYS A11.N, 79
+dist: 1.31 A
+
+Contact: 73
+at1: THR A9.C, 70
+at2: GLY A10.N, 75
+dist: 1.30 A
+
+Contact: 74
+at1: THR A7.C, 55
+at2: LEU A8.N, 60
+dist: 1.32 A
+
+Contact: 75
+at1: LEU A8.C, 62
+at2: THR A9.N, 68
+dist: 1.35 A
+
+Total peptide bonds found: 75
+
 # 2. Structure: 4HHB
-Input: 
+Input: python Exercise_5.py 4hhb.pdb 
 Output:
+
+[...] The terminal cannot copy all peptide bonds due to the large number of entries
+Contact: 363
+at1: GLY B83.C, 1699
+at2: THR B84.N, 1701
+dist: 1.35 A
+
+Contact: 364
+at1: THR B84.C, 1703
+at2: PHE B85.N, 1708
+dist: 1.47 A
+
+Contact: 365
+at1: LEU B88.C, 1733
+at2: SER B89.N, 1739
+dist: 1.37 A
+
+Contact: 366
+at1: PHE B85.C, 1710
+at2: ALA B86.N, 1719
+dist: 1.27 A
+
+Contact: 367
+at1: ALA B140.C, 2136
+at2: LEU B141.N, 2139
+dist: 1.25 A
+
+Contact: 368
+at1: PRO B100.C, 1830
+at2: GLU B101.N, 1835
+dist: 1.28 A
+
+Contact: 369
+at1: ALA B138.C, 2123
+at2: ASN B139.N, 2126
+dist: 1.38 A
+
+Contact: 370
+at1: PHE B103.C, 1854
+at2: ARG B104.N, 1863
+dist: 1.37 A
+
+Contact: 371
+at1: ARG B104.C, 1865
+at2: LEU B105.N, 1874
+dist: 1.41 A
+
+Contact: 372
+at1: LEU B105.C, 1876
+at2: LEU B106.N, 1882
+dist: 1.32 A
+
+Contact: 373
+at1: LEU B106.C, 1884
+at2: GLY B107.N, 1890
+dist: 1.31 A
+
+Contact: 374
+at1: GLY B107.C, 1892
+at2: ASN B108.N, 1894
+dist: 1.36 A
+
+Contact: 375
+at1: HIS B97.C, 1805
+at2: VAL B98.N, 1813
+dist: 1.37 A
+
+Contact: 376
+at1: VAL B98.C, 1815
+at2: ASP B99.N, 1820
+dist: 1.32 A
+
+Contact: 377
+at1: LEU B91.C, 1756
+at2: HIS B92.N, 1762
+dist: 1.39 A
+
+Contact: 378
+at1: ASN B102.C, 1846
+at2: PHE B103.N, 1852
+dist: 1.33 A
+
+Contact: 379
+at1: LEU B96.C, 1797
+at2: HIS B97.N, 1803
+dist: 1.36 A
+
+Contact: 380
+at1: LYS B95.C, 1788
+at2: LEU B96.N, 1795
+dist: 1.51 A
+
+Contact: 381
+at1: ASP B99.C, 1822
+at2: PRO B100.N, 1828
+dist: 1.34 A
+
+Contact: 382
+at1: LEU B141.C, 2141
+at2: ALA B142.N, 2147
+dist: 1.40 A
+
+Contact: 383
+at1: GLU B101.C, 1837
+at2: ASN B102.N, 1844
+dist: 1.52 A
+
+Contact: 384
+at1: VAL B137.C, 2116
+at2: ALA B138.N, 2121
+dist: 1.31 A
+
+Contact: 385
+at1: LEU B75.C, 1635
+at2: ALA B76.N, 1641
+dist: 1.31 A
+
+Contact: 386
+at1: PHE B71.C, 1606
+at2: SER B72.N, 1615
+dist: 1.05 A
+
+Contact: 387
+at1: TRP B15.C, 1177
+at2: GLY B16.N, 1189
+dist: 1.30 A
+
+Contact: 388
+at1: VAL B18.C, 1204
+at2: ASN B19.N, 1209
+dist: 1.35 A
+
+Contact: 389
+at1: LYS B17.C, 1195
+at2: VAL B18.N, 1202
+dist: 1.30 A
+
+Contact: 390
+at1: GLY B16.C, 1191
+at2: LYS B17.N, 1193
+dist: 1.23 A
+
+Contact: 391
+at1: ALA B70.C, 1601
+at2: PHE B71.N, 1604
+dist: 1.34 A
+
+Contact: 392
+at1: VAL B67.C, 1582
+at2: LEU B68.N, 1587
+dist: 1.27 A
+
+Contact: 393
+at1: LYS B66.C, 1573
+at2: VAL B67.N, 1580
+dist: 1.35 A
+
+Contact: 394
+at1: LEU B68.C, 1589
+at2: GLY B69.N, 1595
+dist: 1.31 A
+
+Contact: 395
+at1: LYS B65.C, 1564
+at2: LYS B66.N, 1571
+dist: 1.25 A
+
+Contact: 396
+at1: VAL B20.C, 1219
+at2: ASP B21.N, 1224
+dist: 1.31 A
+
+Contact: 397
+at1: GLY B69.C, 1597
+at2: ALA B70.N, 1599
+dist: 1.53 A
+
+Contact: 398
+at1: ASP B73.C, 1623
+at2: GLY B74.N, 1629
+dist: 1.40 A
+
+Contact: 399
+at1: SER B72.C, 1617
+at2: ASP B73.N, 1621
+dist: 1.23 A
+
+Contact: 400
+at1: ASN B19.C, 1211
+at2: VAL B20.N, 1217
+dist: 1.24 A
+
+Contact: 401
+at1: ASN B108.C, 1896
+at2: VAL B109.N, 1902
+dist: 1.35 A
+
+Contact: 402
+at1: VAL B109.C, 1904
+at2: LEU B110.N, 1909
+dist: 1.39 A
+
+Contact: 403
+at1: ALA B27.C, 1267
+at2: LEU B28.N, 1270
+dist: 1.38 A
+
+Contact: 404
+at1: GLU B26.C, 1258
+at2: ALA B27.N, 1265
+dist: 1.25 A
+
+Contact: 405
+at1: VAL B23.C, 1243
+at2: GLY B24.N, 1248
+dist: 1.23 A
+
+Contact: 406
+at1: GLY B25.C, 1254
+at2: GLU B26.N, 1256
+dist: 1.27 A
+
+Contact: 407
+at1: GLU B22.C, 1234
+at2: VAL B23.N, 1241
+dist: 1.39 A
+
+Contact: 408
+at1: HIS B63.C, 1550
+at2: GLY B64.N, 1558
+dist: 1.21 A
+
+Contact: 409
+at1: ALA B62.C, 1545
+at2: HIS B63.N, 1548
+dist: 1.35 A
+
+Contact: 410
+at1: GLY B64.C, 1560
+at2: LYS B65.N, 1562
+dist: 1.39 A
+
+Contact: 411
+at1: LYS B59.C, 1520
+at2: VAL B60.N, 1527
+dist: 1.23 A
+
+Contact: 412
+at1: GLY B24.C, 1250
+at2: GLY B25.N, 1252
+dist: 1.31 A
+
+Contact: 413
+at1: PRO B58.C, 1513
+at2: LYS B59.N, 1518
+dist: 1.39 A
+
+Contact: 414
+at1: LYS B61.C, 1536
+at2: ALA B62.N, 1543
+dist: 1.29 A
+
+Contact: 415
+at1: VAL B60.C, 1529
+at2: LYS B61.N, 1534
+dist: 1.44 A
+
+Contact: 416
+at1: ASP B21.C, 1226
+at2: GLU B22.N, 1232
+dist: 1.28 A
+
+Contact: 417
+at1: ALA B76.C, 1643
+at2: HIS B77.N, 1646
+dist: 1.64 A
+
+Contact: 418
+at1: GLY B74.C, 1631
+at2: LEU B75.N, 1633
+dist: 1.70 A
+
+Contact: 419
+at1: ALA B135.C, 2107
+at2: GLY B136.N, 2110
+dist: 1.31 A
+
+Contact: 420
+at1: VAL B134.C, 2100
+at2: ALA B135.N, 2105
+dist: 1.40 A
+
+Contact: 421
+at1: LEU B14.C, 1169
+at2: TRP B15.N, 1175
+dist: 1.44 A
+
+Contact: 422
+at1: LEU B110.C, 1911
+at2: VAL B111.N, 1917
+dist: 1.33 A
+
+Contact: 423
+at1: CYS B112.C, 1926
+at2: VAL B113.N, 1930
+dist: 1.21 A
+
+Contact: 424
+at1: VAL B113.C, 1932
+at2: LEU B114.N, 1937
+dist: 1.29 A
+
+Contact: 425
+at1: HIS A87.C, 643
+at2: ALA A88.N, 651
+dist: 1.28 A
+
+Contact: 426
+at1: PRO A95.C, 711
+at2: VAL A96.N, 716
+dist: 1.31 A
+
+Contact: 427
+at1: LEU A86.C, 635
+at2: HIS A87.N, 641
+dist: 1.47 A
+
+Contact: 428
+at1: ASN A97.C, 725
+at2: PHE A98.N, 731
+dist: 1.28 A
+
+Contact: 429
+at1: VAL A132.C, 991
+at2: SER A133.N, 996
+dist: 1.32 A
+
+Contact: 430
+at1: LYS A61.C, 459
+at2: VAL A62.N, 466
+dist: 1.27 A
+
+Contact: 431
+at1: SER A133.C, 998
+at2: THR A134.N, 1002
+dist: 1.26 A
+
+Contact: 432
+at1: PHE A98.C, 733
+at2: LYS A99.N, 742
+dist: 1.32 A
+
+Contact: 433
+at1: LYS A99.C, 744
+at2: LEU A100.N, 751
+dist: 1.32 A
+
+Contact: 434
+at1: SER A102.C, 769
+at2: HIS A103.N, 773
+dist: 1.35 A
+
+Contact: 435
+at1: PHE A128.C, 961
+at2: LEU A129.N, 970
+dist: 1.37 A
+
+Contact: 436
+at1: HIS A103.C, 775
+at2: CYS A104.N, 783
+dist: 1.42 A
+
+Contact: 437
+at1: VAL A96.C, 718
+at2: ASN A97.N, 723
+dist: 1.43 A
+
+Contact: 438
+at1: LEU A100.C, 753
+at2: LEU A101.N, 759
+dist: 1.31 A
+
+Contact: 439
+at1: LEU A101.C, 761
+at2: SER A102.N, 767
+dist: 1.45 A
+
+Contact: 440
+at1: ASP A85.C, 627
+at2: LEU A86.N, 633
+dist: 1.45 A
+
+Contact: 441
+at1: SER A84.C, 621
+at2: ASP A85.N, 625
+dist: 1.39 A
+
+Contact: 442
+at1: LEU A83.C, 613
+at2: SER A84.N, 619
+dist: 1.30 A
+
+Contact: 443
+at1: SER A81.C, 602
+at2: ALA A82.N, 606
+dist: 1.27 A
+
+Contact: 444
+at1: LEU A80.C, 594
+at2: SER A81.N, 600
+dist: 1.44 A
+
+Contact: 445
+at1: PRO A77.C, 574
+at2: ASN A78.N, 579
+dist: 1.33 A
+
+Contact: 446
+at1: ASN A78.C, 581
+at2: ALA A79.N, 587
+dist: 1.28 A
+
+Contact: 447
+at1: ALA A79.C, 589
+at2: LEU A80.N, 592
+dist: 1.22 A
+
+Contact: 448
+at1: ALA A82.C, 608
+at2: LEU A83.N, 611
+dist: 1.41 A
+
+Contact: 449
+at1: THR A137.C, 1026
+at2: SER A138.N, 1031
+dist: 1.22 A
+
+Contact: 450
+at1: THR A134.C, 1004
+at2: VAL A135.N, 1009
+dist: 1.35 A
+
+Contact: 451
+at1: VAL A135.C, 1011
+at2: LEU A136.N, 1016
+dist: 1.28 A
+
+Contact: 452
+at1: ASP A75.C, 558
+at2: MET A76.N, 564
+dist: 1.25 A
+
+Contact: 453
+at1: ASP A74.C, 550
+at2: ASP A75.N, 556
+dist: 0.92 A
+
+Contact: 454
+at1: VAL A73.C, 543
+at2: ASP A74.N, 548
+dist: 1.43 A
+
+Contact: 455
+at1: MET A76.C, 566
+at2: PRO A77.N, 572
+dist: 1.21 A
+
+Contact: 456
+at1: SER A131.C, 985
+at2: VAL A132.N, 989
+dist: 1.25 A
+
+Contact: 457
+at1: LEU A136.C, 1018
+at2: THR A137.N, 1024
+dist: 1.25 A
+
+Contact: 458
+at1: ALA A130.C, 980
+at2: SER A131.N, 983
+dist: 1.42 A
+
+Contact: 459
+at1: GLY A57.C, 432
+at2: HIS A58.N, 434
+dist: 1.25 A
+
+Contact: 460
+at1: VAL A62.C, 468
+at2: ALA A63.N, 473
+dist: 1.32 A
+
+Contact: 461
+at1: LYS A60.C, 450
+at2: LYS A61.N, 457
+dist: 1.51 A
+
+Contact: 462
+at1: GLY A22.C, 152
+at2: GLU A23.N, 154
+dist: 1.49 A
+
+Contact: 463
+at1: ALA A21.C, 147
+at2: GLY A22.N, 150
+dist: 1.31 A
+
+Contact: 464
+at1: GLY A59.C, 446
+at2: LYS A60.N, 448
+dist: 1.40 A
+
+Contact: 465
+at1: LYS A56.C, 423
+at2: GLY A57.N, 430
+dist: 1.55 A
+
+Contact: 466
+at1: LEU A105.C, 791
+at2: LEU A106.N, 797
+dist: 1.36 A
+
+Contact: 467
+at1: LEU A106.C, 799
+at2: VAL A107.N, 805
+dist: 1.34 A
+
+Contact: 468
+at1: TYR A24.C, 165
+at2: GLY A25.N, 175
+dist: 1.30 A
+
+Contact: 469
+at1: HIS A20.C, 137
+at2: ALA A21.N, 145
+dist: 1.20 A
+
+Contact: 470
+at1: HIS A112.C, 839
+at2: LEU A113.N, 847
+dist: 1.22 A
+
+Contact: 471
+at1: THR A108.C, 814
+at2: LEU A109.N, 819
+dist: 1.40 A
+
+Contact: 472
+at1: GLY A25.C, 177
+at2: ALA A26.N, 179
+dist: 1.35 A
+
+Contact: 473
+at1: GLU A23.C, 156
+at2: TYR A24.N, 163
+dist: 1.33 A
+
+Contact: 474
+at1: ALA A19.C, 132
+at2: HIS A20.N, 135
+dist: 1.32 A
+
+Contact: 475
+at1: ALA A65.C, 488
+at2: LEU A66.N, 491
+dist: 1.27 A
+
+Contact: 476
+at1: ASN A68.C, 508
+at2: ALA A69.N, 514
+dist: 1.48 A
+
+Contact: 477
+at1: ASP A64.C, 480
+at2: ALA A65.N, 486
+dist: 1.50 A
+
+Contact: 478
+at1: ALA A63.C, 475
+at2: ASP A64.N, 478
+dist: 1.43 A
+
+Contact: 479
+at1: GLY A18.C, 128
+at2: ALA A19.N, 130
+dist: 1.26 A
+
+Contact: 480
+at1: LEU A66.C, 493
+at2: THR A67.N, 499
+dist: 1.25 A
+
+Contact: 481
+at1: ALA A71.C, 528
+at2: HIS A72.N, 531
+dist: 1.31 A
+
+Contact: 482
+at1: THR A67.C, 501
+at2: ASN A68.N, 506
+dist: 1.33 A
+
+Contact: 483
+at1: HIS A72.C, 533
+at2: VAL A73.N, 541
+dist: 1.42 A
+
+Contact: 484
+at1: ALA A69.C, 516
+at2: VAL A70.N, 519
+dist: 1.45 A
+
+Contact: 485
+at1: VAL A10.C, 68
+at2: LYS A11.N, 73
+dist: 1.33 A
+
+Contact: 486
+at1: ALA A12.C, 84
+at2: ALA A13.N, 87
+dist: 1.38 A
+
+Contact: 487
+at1: TRP A14.C, 94
+at2: GLY A15.N, 106
+dist: 1.39 A
+
+Contact: 488
+at1: LYS A16.C, 112
+at2: VAL A17.N, 119
+dist: 1.52 A
+
+Contact: 489
+at1: GLY A15.C, 108
+at2: LYS A16.N, 110
+dist: 0.92 A
+
+Contact: 490
+at1: ALA A13.C, 89
+at2: TRP A14.N, 92
+dist: 1.39 A
+
+Contact: 491
+at1: VAL A70.C, 521
+at2: ALA A71.N, 526
+dist: 1.34 A
+
+Contact: 492
+at1: VAL A17.C, 121
+at2: GLY A18.N, 126
+dist: 1.60 A
+
+Contact: 493
+at1: HIS A58.C, 436
+at2: GLY A59.N, 444
+dist: 1.25 A
+
+Contact: 494
+at1: CYS A104.C, 785
+at2: LEU A105.N, 789
+dist: 1.25 A
+
+Contact: 495
+at1: ASP C94.C, 2897
+at2: PRO C95.N, 2903
+dist: 1.34 A
+
+Contact: 496
+at1: VAL C93.C, 2890
+at2: ASP C94.N, 2895
+dist: 1.32 A
+
+Contact: 497
+at1: PRO B36.C, 1337
+at2: TRP B37.N, 1342
+dist: 1.28 A
+
+Contact: 498
+at1: TYR B35.C, 1325
+at2: PRO B36.N, 1335
+dist: 1.22 A
+
+Contact: 499
+at1: LEU B31.C, 1295
+at2: LEU B32.N, 1301
+dist: 1.31 A
+
+Contact: 500
+at1: LEU B32.C, 1303
+at2: VAL B33.N, 1309
+dist: 1.34 A
+
+Contact: 501
+at1: VAL B33.C, 1311
+at2: VAL B34.N, 1316
+dist: 1.27 A
+
+Contact: 502
+at1: VAL B34.C, 1318
+at2: TYR B35.N, 1323
+dist: 1.35 A
+
+Contact: 503
+at1: ARG C92.C, 2879
+at2: VAL C93.N, 2888
+dist: 1.46 A
+
+Contact: 504
+at1: ARG B40.C, 1374
+at2: PHE B41.N, 1383
+dist: 1.13 A
+
+Contact: 505
+at1: TRP B37.C, 1344
+at2: THR B38.N, 1356
+dist: 1.37 A
+
+Contact: 506
+at1: PHE B42.C, 1396
+at2: GLU B43.N, 1405
+dist: 1.22 A
+
+Contact: 507
+at1: GLU B43.C, 1407
+at2: SER B44.N, 1414
+dist: 1.46 A
+
+Contact: 508
+at1: SER B44.C, 1416
+at2: PHE B45.N, 1420
+dist: 1.55 A
+
+Contact: 509
+at1: GLN B39.C, 1365
+at2: ARG B40.N, 1372
+dist: 1.34 A
+
+Contact: 510
+at1: PHE B41.C, 1385
+at2: PHE B42.N, 1394
+dist: 1.21 A
+
+Contact: 511
+at1: THR B38.C, 1358
+at2: GLN B39.N, 1363
+dist: 1.29 A
+
+Contact: 512
+at1: THR C137.C, 3220
+at2: SER C138.N, 3225
+dist: 1.27 A
+
+Contact: 513
+at1: SER C138.C, 3227
+at2: LYS C139.N, 3231
+dist: 1.33 A
+
+Contact: 514
+at1: VAL A1.C, 3
+at2: LEU A2.N, 8
+dist: 1.29 A
+
+Contact: 515
+at1: LYS A127.C, 952
+at2: PHE A128.N, 959
+dist: 1.16 A
+
+Contact: 516
+at1: ASP A126.C, 944
+at2: LYS A127.N, 950
+dist: 1.42 A
+
+Contact: 517
+at1: LEU A2.C, 10
+at2: SER A3.N, 16
+dist: 1.02 A
+
+Contact: 518
+at1: LEU C86.C, 2829
+at2: HIS C87.N, 2835
+dist: 1.43 A
+
+Contact: 519
+at1: SER C84.C, 2815
+at2: ASP C85.N, 2819
+dist: 1.47 A
+
+Contact: 520
+at1: LEU C91.C, 2871
+at2: ARG C92.N, 2877
+dist: 1.35 A
+
+Contact: 521
+at1: HIS C89.C, 2852
+at2: LYS C90.N, 2860
+dist: 1.21 A
+
+Contact: 522
+at1: ALA C88.C, 2847
+at2: HIS C89.N, 2850
+dist: 1.38 A
+
+Contact: 523
+at1: ASP C85.C, 2821
+at2: LEU C86.N, 2827
+dist: 1.45 A
+
+Contact: 524
+at1: LYS C90.C, 2862
+at2: LEU C91.N, 2869
+dist: 1.44 A
+
+Contact: 525
+at1: HIS C87.C, 2837
+at2: ALA C88.N, 2845
+dist: 1.39 A
+
+Contact: 526
+at1: LYS C139.C, 3233
+at2: TYR C140.N, 3240
+dist: 1.30 A
+
+Contact: 527
+at1: TYR C140.C, 3242
+at2: ARG C141.N, 3252
+dist: 1.34 A
+
+Contact: 528
+at1: HIS A122.C, 915
+at2: ALA A123.N, 923
+dist: 1.30 A
+
+Contact: 529
+at1: THR A118.C, 889
+at2: PRO A119.N, 894
+dist: 1.34 A
+
+Contact: 530
+at1: GLU A116.C, 869
+at2: PHE A117.N, 876
+dist: 1.27 A
+
+Contact: 531
+at1: LEU A113.C, 849
+at2: PRO A114.N, 855
+dist: 1.29 A
+
+Contact: 532
+at1: ALA A115.C, 864
+at2: GLU A116.N, 867
+dist: 1.29 A
+
+Contact: 533
+at1: PRO A114.C, 857
+at2: ALA A115.N, 862
+dist: 1.36 A
+
+Contact: 534
+at1: PHE A117.C, 878
+at2: THR A118.N, 887
+dist: 1.30 A
+
+Contact: 535
+at1: PHE B45.C, 1422
+at2: GLY B46.N, 1431
+dist: 1.29 A
+
+Contact: 536
+at1: GLY B46.C, 1433
+at2: ASP B47.N, 1435
+dist: 1.07 A
+
+Contact: 537
+at1: GLY B29.C, 1280
+at2: ARG B30.N, 1282
+dist: 1.31 A
+
+Contact: 538
+at1: ASN B57.C, 1505
+at2: PRO B58.N, 1511
+dist: 1.33 A
+
+Contact: 539
+at1: GLY B56.C, 1501
+at2: ASN B57.N, 1503
+dist: 1.30 A
+
+Contact: 540
+at1: MET B55.C, 1493
+at2: GLY B56.N, 1499
+dist: 1.29 A
+
+Contact: 541
+at1: ALA B53.C, 1481
+at2: VAL B54.N, 1484
+dist: 1.48 A
+
+Contact: 542
+at1: VAL B54.C, 1486
+at2: MET B55.N, 1491
+dist: 1.35 A
+
+Contact: 543
+at1: ALA A123.C, 925
+at2: SER A124.N, 928
+dist: 1.41 A
+
+Contact: 544
+at1: SER A124.C, 930
+at2: LEU A125.N, 934
+dist: 1.31 A
+
+Contact: 545
+at1: ASP A6.C, 36
+at2: LYS A7.N, 42
+dist: 1.41 A
+
+Contact: 546
+at1: LYS A7.C, 44
+at2: THR A8.N, 51
+dist: 1.59 A
+
+Contact: 547
+at1: ASN A9.C, 60
+at2: VAL A10.N, 66
+dist: 1.36 A
+
+Contact: 548
+at1: THR A8.C, 53
+at2: ASN A9.N, 58
+dist: 1.52 A
+
+Contact: 549
+at1: LEU B48.C, 1445
+at2: SER B49.N, 1451
+dist: 1.26 A
+
+Contact: 550
+at1: ASP B47.C, 1437
+at2: LEU B48.N, 1443
+dist: 1.49 A
+
+Contact: 551
+at1: SER B49.C, 1453
+at2: THR B50.N, 1457
+dist: 1.32 A
+
+Contact: 552
+at1: THR B50.C, 1459
+at2: PRO B51.N, 1464
+dist: 1.34 A
+
+Contact: 553
+at1: ALA A120.C, 903
+at2: VAL A121.N, 906
+dist: 1.17 A
+
+Contact: 554
+at1: PRO B51.C, 1466
+at2: ASP B52.N, 1471
+dist: 1.41 A
+
+Contact: 555
+at1: SER A3.C, 18
+at2: PRO A4.N, 22
+dist: 1.62 A
+
+Contact: 556
+at1: ALA A5.C, 31
+at2: ASP A6.N, 34
+dist: 1.44 A
+
+Contact: 557
+at1: PRO A4.C, 24
+at2: ALA A5.N, 29
+dist: 1.59 A
+
+Contact: 558
+at1: VAL A121.C, 908
+at2: HIS A122.N, 913
+dist: 1.25 A
+
+Contact: 559
+at1: PRO A119.C, 896
+at2: ALA A120.N, 901
+dist: 1.37 A
+
+Contact: 560
+at1: ASP B52.C, 1473
+at2: ALA B53.N, 1479
+dist: 1.39 A
+
+Contact: 561
+at1: ARG B30.C, 1284
+at2: LEU B31.N, 1293
+dist: 1.32 A
+
+Contact: 562
+at1: LEU A125.C, 936
+at2: ASP A126.N, 942
+dist: 1.34 A
+
+Contact: 563
+at1: LEU A129.C, 972
+at2: ALA A130.N, 978
+dist: 1.29 A
+
+Contact: 564
+at1: LEU A109.C, 821
+at2: ALA A110.N, 827
+dist: 1.34 A
+
+Contact: 565
+at1: LYS A11.C, 75
+at2: ALA A12.N, 82
+dist: 1.35 A
+
+Contact: 566
+at1: LEU B28.C, 1272
+at2: GLY B29.N, 1278
+dist: 1.43 A
+
+Contact: 567
+at1: GLU B90.C, 1747
+at2: LEU B91.N, 1754
+dist: 1.48 A
+
+Contact: 568
+at1: HIS B92.C, 1764
+at2: CYS B93.N, 1772
+dist: 1.33 A
+
+Contact: 569
+at1: LYS A90.C, 668
+at2: LEU A91.N, 675
+dist: 1.37 A
+
+Contact: 570
+at1: LEU C136.C, 3212
+at2: THR C137.N, 3218
+dist: 1.34 A
+
+Total peptide bonds found: 570
