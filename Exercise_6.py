@@ -44,7 +44,7 @@ pdb_file = args.pdb_file
 pdb_id = os.path.splitext(os.path.basename(pdb_file))[0]
 
 
-pdb_parser = PDBParser(PERMISSIVE=1)
+pdb_parser = PDBParser(PERMISSIVE=1, QUIET = True)
 
 st = pdb_parser.get_structure(pdb_id, pdb_file)
 
