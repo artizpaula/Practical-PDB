@@ -2,7 +2,7 @@
 
 Practical 1 exercises for **Introduction to protein structure manipulation in Python**, using [Biopython](https://biopython.org/)'s `Bio.PDB` module to parse, inspect and analyze protein structures in PDB format.
 
-**Authors:** Alicia Mañas, Lídia Sánchez and Paula Artiz
+**Authors:** Alicia Mañas, Lídia Sánchez and Paula Artiz.
 
 ### Repository contents
 
