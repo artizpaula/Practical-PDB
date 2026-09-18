@@ -4,7 +4,7 @@ Practical 1 exercises for **Introduction to protein structure manipulation in Py
 
 **Authors:** Alicia Mañas, Lídia Sanchez, Paula Artiz
 
-## Repository contents
+### Repository contents
 
 | File | Description |
 |---|---|
@@ -19,7 +19,7 @@ Practical 1 exercises for **Introduction to protein structure manipulation in Py
 | `Exercise_*.txt` | Example command-line inputs and outputs for each exercise |
 | `1UBQ.pdb`, `4HHB.pdb` | Example structures used to test the scripts |
 
-## Usage
+### Usage
 
 Each script uses `argparse`; run with `-h` to see all options. General pattern:
 
@@ -32,7 +32,7 @@ python Exercise_5.py [--cutoff CUTOFF] <input_pdb>
 python Exercise_6.py [--cutoff CUTOFF] <input_pdb>
 ```
 
-### Examples
+#### Examples
 
 ```bash
 # Residue pairs with CA atoms closer than 5 A
